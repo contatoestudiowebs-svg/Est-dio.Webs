@@ -276,6 +276,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 11,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png',
     synopsis: 'Martin e Lupe protagonizam embates épicos, recheados de sagacidade e acidez, mas no meio de tudo isso descobrem um sentimento mais forte que o ódio.',
     episodes: generateUnits(11, 'episódios')
   },
@@ -336,6 +337,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 14,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_cb5f1af4c8e7409d83964e1bb0644ac7~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_cb5f1af4c8e7409d83964e1bb0644ac7~mv2.png',
     synopsis: 'Carol é ginasta e tem o sonho de estudar fora do país para ter um melhor desempenho e participar de uma Olimpíada. Seu pai, Bruno, se empenha em conseguir um patrocínio para que Carol estude fora. Isadora é uma garota rica, mas não aceita as coisas que sua mãe, Aurora, impõe, então decide se matricular em um colégio público sem sua mãe saber e esconde de suas amigas quem realmente é. Já Tamara é uma menina esforçada e tem que lidar com o problema do alcoolismo de seu pai, Berto, que além de beber, passa dias fora de casa, e Tamara tem que se dobrar para cuidar também da sua irmã Eva. Essas três histórias se tornam uma só em As Mina.',
     episodes: generateUnits(14, 'episódios')
   },
@@ -397,6 +399,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 6,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_2a44a37db9514aa99f3f78485abc1abc~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_2a44a37db9514aa99f3f78485abc1abc~mv2.png',
     synopsis: 'Em uma intrincada teia de poder e lealdade volátil, Sena, líder de uma quadrilha habilidosa, enfrenta uma ameaça desconhecida. Ao perceber a necessidade de proteger seus aliados, toma a surpreendente decisão de entregá-los à polícia. Traídos, seus subordinados enfrentam a justiça, enquanto Sena elabora secretamente um plano audacioso, envolvendo a delegada Helena para enganar os investigadores. A trama se desenrola com mistérios e reviravoltas, revelando a complexidade do jogo de Sena.',
     episodes: generateUnits(6, 'episódios')
   },
@@ -422,6 +425,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 11,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png',
     synopsis: 'Com a ambição de tomar Mont-Ar, Emma arma um plano em que mata a rainha e dá um fim ao herdeiro do trono. Ela então casa-se com o rei e o trai ao matá-lo. Ela assume o trono e com ajuda do bruxo Dalibor, ela faz Mont-Ar sucumbir aos seus pés. Anos depois, Emma e Dalibor descobrem que o herdeiro do trono está vivo e que seu reinado está com os dias contados.',
     episodes: generateUnits(11, 'episódios')
   }

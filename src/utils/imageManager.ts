@@ -31,6 +31,14 @@ export const OFFICIAL_COVERS_REGISTRY: Record<string, string> = {
     'https://static.wixstatic.com/media/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png',
   'caminho-ao-poder':
     'https://static.wixstatic.com/media/cbfc82_294c7c2efa1c48458e17b151396cb510~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_294c7c2efa1c48458e17b151396cb510~mv2.png',
+  'as-mina':
+    'https://static.wixstatic.com/media/cbfc82_cb5f1af4c8e7409d83964e1bb0644ac7~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_cb5f1af4c8e7409d83964e1bb0644ac7~mv2.png',
+  'sena':
+    'https://static.wixstatic.com/media/cbfc82_2a44a37db9514aa99f3f78485abc1abc~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_2a44a37db9514aa99f3f78485abc1abc~mv2.png',
+  'no-te-pido-flores':
+    'https://static.wixstatic.com/media/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png',
+  'um-novo-rei-1-temporada':
+    'https://static.wixstatic.com/media/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png',
 };
 
 export function getSavedCovers(): Record<string, string> {
