@@ -1,0 +1,6 @@
+{
+  "name": "Estúdio Webs - Web Emissora de Ficção",
+  "description": "Plataforma oficial do Estúdio Webs: catálogo de web novelas e web séries, capítulos, episódios e autores da teledramaturgia virtual.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

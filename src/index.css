@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F5F5F5;
+    color: #1e293b;
+  }
+}
+
+.font-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Cinzel', serif;
+}
+
+.font-reading {
+  font-family: 'Open Sans', Georgia, serif;
+}
+
+/* Custom broadcaster scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ebebeb;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
