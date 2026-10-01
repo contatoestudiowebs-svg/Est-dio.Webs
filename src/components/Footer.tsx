@@ -23,8 +23,8 @@ export function Footer({ onNavigate }: FooterProps) {
               onClick={() => onNavigate('/')}
               className="flex items-center gap-3 cursor-pointer group"
             >
-              <div className="w-10 h-10 flex items-center justify-center shrink-0">
-                <EstudioWebsLogo className="w-9 h-9 drop-shadow-md" />
+              <div className="h-10 w-12 flex items-center justify-center shrink-0">
+                <EstudioWebsLogo className="w-full h-full object-contain drop-shadow-md" />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold tracking-tight text-white text-xl font-brand">

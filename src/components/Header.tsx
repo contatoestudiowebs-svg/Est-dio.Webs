@@ -73,8 +73,8 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
             onClick={() => handleNav('/')}
             className="flex items-center gap-3 cursor-pointer group select-none"
           >
-            <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shrink-0">
-              <EstudioWebsLogo className="w-9 h-9 drop-shadow-sm" />
+            <div className="h-10 w-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shrink-0">
+              <EstudioWebsLogo className="w-full h-full object-contain drop-shadow-xs" />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
