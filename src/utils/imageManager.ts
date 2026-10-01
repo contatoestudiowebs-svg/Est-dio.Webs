@@ -4,7 +4,34 @@ import { useState, useEffect } from 'react';
 const STORAGE_KEY = 'estudiowebs_custom_covers_v1';
 
 // Preset official image URLs or asset paths if supplied
-export const OFFICIAL_COVERS_REGISTRY: Record<string, string> = {};
+export const OFFICIAL_COVERS_REGISTRY: Record<string, string> = {
+  'o-suplicio':
+    'https://static.wixstatic.com/media/cbfc82_5bd3799907fb4098bcde7a2e63509b90~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_5bd3799907fb4098bcde7a2e63509b90~mv2.png',
+  'ponto-fraco':
+    'https://static.wixstatic.com/media/cbfc82_191ef35d6bfb4a72b331172bf74a5e0d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_191ef35d6bfb4a72b331172bf74a5e0d~mv2.png',
+  '451':
+    'https://static.wixstatic.com/media/cbfc82_835265d7f6d24cef9e9458b0f71b6fd9~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_835265d7f6d24cef9e9458b0f71b6fd9~mv2.png',
+  'homem-com-h':
+    'https://static.wixstatic.com/media/cbfc82_9a0bf519062c49cea2fe3bbf5615a4be~mv2.png/v1/fill/w_369,h_536,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cbfc82_9a0bf519062c49cea2fe3bbf5615a4be~mv2.png',
+  'a-santa-do-pau-oco':
+    'https://static.wixstatic.com/media/cbfc82_fc095adec5a34548bd1545878589d704~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_fc095adec5a34548bd1545878589d704~mv2.png',
+  'medusa-a-maldicao-de-atena':
+    'https://static.wixstatic.com/media/cbfc82_eeb860d4f26d46438edd141a87f0b1e8~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_eeb860d4f26d46438edd141a87f0b1e8~mv2.png',
+  'pandorum':
+    'https://static.wixstatic.com/media/cbfc82_210d33e510854ef79aac322b4003038e~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_210d33e510854ef79aac322b4003038e~mv2.png',
+  'pandorum-2':
+    'https://static.wixstatic.com/media/cbfc82_96c8315bda964573a3447f8949da9b69~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_96c8315bda964573a3447f8949da9b69~mv2.png',
+  'infidelidade':
+    'https://static.wixstatic.com/media/cbfc82_cb487eb87446490895186f78c158901e~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_cb487eb87446490895186f78c158901e~mv2.png',
+  'um-novo-rei-2':
+    'https://static.wixstatic.com/media/cbfc82_91a9976d35da412bb0a852f63a297778~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_91a9976d35da412bb0a852f63a297778~mv2.png',
+  'rasga-mortalha-2':
+    'https://static.wixstatic.com/media/cbfc82_a2be2c24c82f41a9bc43bd0b8a40ba8d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_a2be2c24c82f41a9bc43bd0b8a40ba8d~mv2.png',
+  'cold-case-brasil':
+    'https://static.wixstatic.com/media/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png',
+  'caminho-ao-poder':
+    'https://static.wixstatic.com/media/cbfc82_294c7c2efa1c48458e17b151396cb510~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_294c7c2efa1c48458e17b151396cb510~mv2.png',
+};
 
 export function getSavedCovers(): Record<string, string> {
   try {

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Film, BookOpen, User, Sparkles, ImagePlus } from 'lucide-react';
 import { WebProduction } from '../types';
 import { useProductionCover } from '../utils/imageManager';
+import { useManager } from '../utils/managerAuth';
 import { ImageUploadModal } from './ImageUploadModal';
 
 interface WebCardProps {
@@ -11,6 +12,7 @@ interface WebCardProps {
 }
 
 export function WebCard({ production, onNavigate, compact = false }: WebCardProps) {
+  const { isManager } = useManager();
   const coverImage = useProductionCover(production.slug, production.coverImage);
   const [isUploadOpen, setIsUploadOpen] = useState(false);
 
@@ -70,17 +72,20 @@ export function WebCard({ production, onNavigate, compact = false }: WebCardProp
             </div>
           )}
 
-          {/* Quick upload trigger button for the official artwork */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsUploadOpen(true);
-            }}
-            title="Vincular ou atualizar capa oficial"
-            className="absolute bottom-2 right-2 p-1.5 rounded-lg bg-white/90 hover:bg-[#D80050] text-slate-700 hover:text-white backdrop-blur border border-slate-200 shadow-sm transition z-20 opacity-0 group-hover:opacity-100"
-          >
-            <ImagePlus className="w-4 h-4" />
-          </button>
+          {/* Cover trigger button - VISIBLE ONLY TO MANAGER */}
+          {isManager && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsUploadOpen(true);
+              }}
+              title="Gerenciador: Vincular ou alterar capa por URL"
+              className="absolute bottom-2 right-2 px-2 py-1 rounded-lg bg-slate-900/90 hover:bg-[#D80050] text-white backdrop-blur border border-slate-700 shadow-md transition z-20 flex items-center gap-1 text-[10px] font-bold"
+            >
+              <ImagePlus className="w-3.5 h-3.5 text-[#D80050]" />
+              <span>URL</span>
+            </button>
+          )}
 
           {/* Overlay badges on card */}
           <div className="absolute top-2 left-2 z-10 flex flex-col gap-1 pointer-events-none">
@@ -146,13 +151,15 @@ export function WebCard({ production, onNavigate, compact = false }: WebCardProp
         </div>
       </div>
 
-      <ImageUploadModal
-        productionTitle={production.title}
-        productionSlug={production.slug}
-        currentImage={coverImage}
-        isOpen={isUploadOpen}
-        onClose={() => setIsUploadOpen(false)}
-      />
+      {isManager && (
+        <ImageUploadModal
+          productionTitle={production.title}
+          productionSlug={production.slug}
+          currentImage={coverImage}
+          isOpen={isUploadOpen}
+          onClose={() => setIsUploadOpen(false)}
+        />
+      )}
     </>
   );
 }

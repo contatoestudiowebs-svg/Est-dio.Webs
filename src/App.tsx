@@ -12,13 +12,17 @@ import { AuthorDetailPage } from './pages/AuthorDetailPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { SubmitProjectPage } from './pages/SubmitProjectPage';
+import { ConfiguracoesPage } from './pages/ConfiguracoesPage';
 import { ProductionCategory } from './types';
+import { ManagerProvider, useManager } from './utils/managerAuth';
+import { ManagerModal, ManagerFloatingBar } from './components/ManagerModal';
 
-export function App() {
+function AppContent() {
   const [currentPath, setCurrentPath] = useState<string>(() => {
     return window.location.pathname || '/';
   });
   const [searchOpen, setSearchOpen] = useState(false);
+  const { openManagerModal } = useManager();
 
   // Sync with browser back/forward buttons
   useEffect(() => {
@@ -28,6 +32,13 @@ export function App() {
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
+
+  // Check direct /gerenciador route
+  useEffect(() => {
+    if (currentPath === '/gerenciador' || currentPath === '/admin') {
+      openManagerModal();
+    }
+  }, [currentPath, openManagerModal]);
 
   // Navigation function
   const navigate = (path: string) => {
@@ -46,8 +57,8 @@ export function App() {
     const [pathOnly, searchParamsString] = currentPath.split('?');
     const searchParams = new URLSearchParams(searchParamsString || '');
 
-    // 1. Home
-    if (pathOnly === '/' || pathOnly === '') {
+    // 1. Home (or /gerenciador /admin shortcut)
+    if (pathOnly === '/' || pathOnly === '' || pathOnly === '/gerenciador' || pathOnly === '/admin') {
       return <HomePage onNavigate={navigate} />;
     }
 
@@ -126,6 +137,11 @@ export function App() {
       return <SubmitProjectPage />;
     }
 
+    // 11. Configurations & Covers: /configuracoes & /configuracao
+    if (pathOnly === '/configuracoes' || pathOnly === '/configuracao') {
+      return <ConfiguracoesPage onNavigate={navigate} />;
+    }
+
     // Fallback: 404
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
@@ -164,7 +180,19 @@ export function App() {
 
       {/* Broadcast Footer */}
       <Footer onNavigate={navigate} />
+
+      {/* Manager Panel & Floating Bar */}
+      <ManagerModal onNavigate={navigate} />
+      <ManagerFloatingBar onNavigate={navigate} />
     </div>
+  );
+}
+
+export function App() {
+  return (
+    <ManagerProvider>
+      <AppContent />
+    </ManagerProvider>
   );
 }
 

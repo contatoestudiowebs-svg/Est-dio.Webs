@@ -10,7 +10,8 @@ import {
   Info,
   Mail,
   Send,
-  Radio
+  Radio,
+  Settings
 } from 'lucide-react';
 import { EstudioWebsLogo } from './EstudioWebsLogo';
 
@@ -125,6 +126,20 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
               </kbd>
             </button>
 
+            {/* Settings / Configuração Trigger */}
+            <button
+              onClick={() => handleNav('/configuracoes')}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-lg border text-xs font-bold transition ${
+                currentPath === '/configuracoes'
+                  ? 'bg-rose-50 border-rose-200 text-[#D80050]'
+                  : 'bg-slate-100 hover:bg-slate-200/80 border-slate-200 text-slate-700 hover:text-slate-900'
+              }`}
+              title="Configuração: Alterar imagens e capas de cada produção"
+            >
+              <Settings className="w-3.5 h-3.5 text-[#D80050]" />
+              <span className="hidden md:inline">Configuração</span>
+            </button>
+
             {/* Envie seu Projeto CTA */}
             <button
               onClick={() => handleNav('/envie-seu-projeto')}
@@ -168,6 +183,18 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
           })}
 
           <div className="pt-2 border-t border-slate-200 flex flex-col gap-2">
+            <button
+              onClick={() => handleNav('/configuracoes')}
+              className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-lg border font-bold text-xs uppercase tracking-wider transition ${
+                currentPath === '/configuracoes'
+                  ? 'bg-rose-50 text-[#D80050] border-rose-200'
+                  : 'bg-slate-100 text-slate-800 border-slate-200 hover:bg-slate-200'
+              }`}
+            >
+              <Settings className="w-4 h-4 text-[#D80050]" />
+              <span>Configuração de Capas</span>
+            </button>
+
             <button
               onClick={() => handleNav('/envie-seu-projeto')}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-[#D80050] hover:bg-[#be0044] text-white font-bold text-xs uppercase tracking-wider transition shadow-sm"

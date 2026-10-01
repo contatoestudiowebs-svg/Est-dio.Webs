@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, BookOpen, User, Sparkles, ImagePlus } from 'lucide-react';
 import { WebProduction } from '../types';
 import { useProductionCover } from '../utils/imageManager';
+import { useManager } from '../utils/managerAuth';
 import { ImageUploadModal } from './ImageUploadModal';
 
 interface HeroDestaqueProps {
@@ -10,6 +11,7 @@ interface HeroDestaqueProps {
 }
 
 export function HeroDestaque({ productions, onNavigate }: HeroDestaqueProps) {
+  const { isManager } = useManager();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isUploadOpen, setIsUploadOpen] = useState(false);
 
@@ -121,14 +123,17 @@ export function HeroDestaque({ productions, onNavigate }: HeroDestaqueProps) {
                   </div>
                 )}
 
-                {/* Upload button to link official artwork */}
-                <button
-                  onClick={() => setIsUploadOpen(true)}
-                  className="absolute bottom-3 right-3 p-2 rounded-lg bg-white/90 hover:bg-[#D80050] text-slate-700 hover:text-white backdrop-blur border border-slate-200 shadow-sm transition z-10"
-                  title="Vincular ou atualizar capa oficial"
-                >
-                  <ImagePlus className="w-4 h-4" />
-                </button>
+                {/* Upload button to link official artwork - ONLY FOR MANAGER */}
+                {isManager && (
+                  <button
+                    onClick={() => setIsUploadOpen(true)}
+                    className="absolute bottom-3 right-3 px-2.5 py-1.5 rounded-lg bg-slate-900/90 hover:bg-[#D80050] text-white backdrop-blur border border-slate-700 shadow-md transition z-10 flex items-center gap-1.5 text-xs font-bold"
+                    title="Gerenciador: Vincular capa por URL"
+                  >
+                    <ImagePlus className="w-3.5 h-3.5 text-[#D80050]" />
+                    <span>Alterar Capa por URL</span>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -224,13 +229,15 @@ export function HeroDestaque({ productions, onNavigate }: HeroDestaqueProps) {
         </div>
       </div>
 
-      <ImageUploadModal
-        productionTitle={current.title}
-        productionSlug={current.slug}
-        currentImage={coverImage}
-        isOpen={isUploadOpen}
-        onClose={() => setIsUploadOpen(false)}
-      />
+      {isManager && (
+        <ImageUploadModal
+          productionTitle={current.title}
+          productionSlug={current.slug}
+          currentImage={coverImage}
+          isOpen={isUploadOpen}
+          onClose={() => setIsUploadOpen(false)}
+        />
+      )}
     </section>
   );
 }

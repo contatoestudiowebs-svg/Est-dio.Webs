@@ -1,13 +1,15 @@
 import React from 'react';
-import { Tv, Heart, ShieldCheck, Film, BookOpen, Send, Mail } from 'lucide-react';
+import { Tv, Heart, ShieldCheck, Film, BookOpen, Send, Mail, Lock } from 'lucide-react';
 import { AUTHORS_DATA } from '../data/authors';
 import { EstudioWebsLogo } from './EstudioWebsLogo';
+import { useManager } from '../utils/managerAuth';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
 }
 
 export function Footer({ onNavigate }: FooterProps) {
+  const { isManager, openManagerModal } = useManager();
   return (
     <footer className="w-full bg-[#0f172a] border-t border-slate-800 text-slate-300 mt-20">
       {/* Broadcaster brand accent banner */}
@@ -183,8 +185,21 @@ export function Footer({ onNavigate }: FooterProps) {
             Obras ficcionais de teledramaturgia virtual.
           </div>
 
-          <div className="flex items-center gap-1 text-[11px]">
+          <div className="flex items-center gap-4 text-[11px] flex-wrap">
             <span>Produzido para a comunidade de teledramaturgia virtual</span>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <button
+              onClick={openManagerModal}
+              className={`flex items-center gap-1.5 transition py-1 px-2.5 rounded-lg border text-[11px] ${
+                isManager
+                  ? 'bg-rose-950/60 border-rose-800 text-rose-300 font-bold hover:bg-rose-900/60'
+                  : 'text-slate-400 hover:text-slate-200 border-slate-800 hover:border-slate-700'
+              }`}
+              title="Acesso exclusivo para o gerenciador de capas e configurações"
+            >
+              <Lock className="w-3 h-3 text-[#D80050]" />
+              <span>{isManager ? 'Painel do Gerenciador (Ativo)' : 'Acesso Gerenciador'}</span>
+            </button>
           </div>
         </div>
       </div>

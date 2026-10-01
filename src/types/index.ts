@@ -50,4 +50,5 @@ export type ViewMode =
   | { type: 'author'; authorSlug: string }
   | { type: 'about' }
   | { type: 'contact' }
-  | { type: 'submit-project' };
+  | { type: 'submit-project' }
+  | { type: 'configuracoes' };

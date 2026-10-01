@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { getProductionBySlug, PRODUCTIONS_DATA } from '../data/productions';
 import { useProductionCover } from '../utils/imageManager';
+import { useManager } from '../utils/managerAuth';
 import { ImageUploadModal } from '../components/ImageUploadModal';
 import { WebCard } from '../components/WebCard';
 import { SEOHead } from '../components/SEOHead';
@@ -25,6 +26,7 @@ interface ProductionDetailPageProps {
 }
 
 export function ProductionDetailPage({ slug, onNavigate }: ProductionDetailPageProps) {
+  const { isManager } = useManager();
   const production = getProductionBySlug(slug);
   const [isUploadOpen, setIsUploadOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -157,23 +159,28 @@ export function ProductionDetailPage({ slug, onNavigate }: ProductionDetailPageP
                 </div>
               )}
 
-              {/* Upload or update cover button */}
-              <button
-                onClick={() => setIsUploadOpen(true)}
-                className="absolute bottom-3 right-3 p-2 rounded-lg bg-white/90 hover:bg-[#D80050] text-slate-700 hover:text-white backdrop-blur border border-slate-200 shadow-sm transition z-10"
-                title="Vincular ou atualizar capa oficial"
-              >
-                <ImagePlus className="w-4 h-4" />
-              </button>
+              {/* Upload or update cover button - ONLY FOR MANAGER */}
+              {isManager && (
+                <button
+                  onClick={() => setIsUploadOpen(true)}
+                  className="absolute bottom-3 right-3 px-2.5 py-1.5 rounded-lg bg-slate-900/90 hover:bg-[#D80050] text-white backdrop-blur border border-slate-700 shadow-md transition z-10 flex items-center gap-1.5 text-xs font-bold"
+                  title="Gerenciador: Vincular ou alterar capa por URL"
+                >
+                  <ImagePlus className="w-3.5 h-3.5 text-[#D80050]" />
+                  <span>Alterar Capa por URL</span>
+                </button>
+              )}
             </div>
 
-            <button
-              onClick={() => setIsUploadOpen(true)}
-              className="mt-3 text-xs text-slate-600 hover:text-[#D80050] flex items-center gap-1.5 transition font-medium"
-            >
-              <ImagePlus className="w-3.5 h-3.5 text-[#D80050]" />
-              <span>{coverImage ? 'Alterar capa oficial' : 'Vincular capa oficial'}</span>
-            </button>
+            {isManager && (
+              <button
+                onClick={() => setIsUploadOpen(true)}
+                className="mt-3 text-xs text-slate-600 hover:text-[#D80050] flex items-center gap-1.5 transition font-bold"
+              >
+                <ImagePlus className="w-3.5 h-3.5 text-[#D80050]" />
+                <span>{coverImage ? 'Alterar capa oficial (URL)' : 'Vincular capa oficial (URL)'}</span>
+              </button>
+            )}
           </div>
 
           {/* Production Info Column */}
@@ -361,13 +368,15 @@ export function ProductionDetailPage({ slug, onNavigate }: ProductionDetailPageP
         </section>
       )}
 
-      <ImageUploadModal
-        productionTitle={production.title}
-        productionSlug={production.slug}
-        currentImage={coverImage}
-        isOpen={isUploadOpen}
-        onClose={() => setIsUploadOpen(false)}
-      />
+      {isManager && (
+        <ImageUploadModal
+          productionTitle={production.title}
+          productionSlug={production.slug}
+          currentImage={coverImage}
+          isOpen={isUploadOpen}
+          onClose={() => setIsUploadOpen(false)}
+        />
+      )}
     </div>
   );
 }
