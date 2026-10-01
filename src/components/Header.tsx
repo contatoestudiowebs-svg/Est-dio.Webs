@@ -10,8 +10,7 @@ import {
   Info,
   Mail,
   Send,
-  Radio,
-  Settings
+  Radio
 } from 'lucide-react';
 import { EstudioWebsLogo } from './EstudioWebsLogo';
 
@@ -68,23 +67,14 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
-          {/* Logo */}
+          {/* Logo - Only Official Logo */}
           <div
             onClick={() => handleNav('/')}
-            className="flex items-center gap-3 cursor-pointer group select-none"
+            className="flex items-center cursor-pointer group select-none py-1"
+            title="Estúdio Webs"
           >
-            <div className="h-10 w-12 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shrink-0">
+            <div className="h-11 sm:h-12 w-14 sm:w-16 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 shrink-0">
               <EstudioWebsLogo className="w-full h-full object-contain drop-shadow-xs" />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold tracking-tight text-slate-900 text-xl sm:text-2xl font-brand">
-                  ESTÚDIO<span className="text-[#D80050] font-black">.WEBS</span>
-                </span>
-              </div>
-              <span className="text-[10px] tracking-widest text-slate-500 font-bold uppercase -mt-0.5">
-                WEB EMISSORA
-              </span>
             </div>
           </div>
 
@@ -124,20 +114,6 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
               <kbd className="hidden md:inline text-[10px] bg-white text-slate-500 px-1.5 py-0.5 rounded border border-slate-300 font-sans shadow-xs">
                 ⌘K
               </kbd>
-            </button>
-
-            {/* Settings / Configuração Trigger */}
-            <button
-              onClick={() => handleNav('/configuracoes')}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-lg border text-xs font-bold transition ${
-                currentPath === '/configuracoes'
-                  ? 'bg-rose-50 border-rose-200 text-[#D80050]'
-                  : 'bg-slate-100 hover:bg-slate-200/80 border-slate-200 text-slate-700 hover:text-slate-900'
-              }`}
-              title="Configuração: Alterar imagens e capas de cada produção"
-            >
-              <Settings className="w-3.5 h-3.5 text-[#D80050]" />
-              <span className="hidden md:inline">Configuração</span>
             </button>
 
             {/* Envie seu Projeto CTA */}
@@ -183,18 +159,6 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
           })}
 
           <div className="pt-2 border-t border-slate-200 flex flex-col gap-2">
-            <button
-              onClick={() => handleNav('/configuracoes')}
-              className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-lg border font-bold text-xs uppercase tracking-wider transition ${
-                currentPath === '/configuracoes'
-                  ? 'bg-rose-50 text-[#D80050] border-rose-200'
-                  : 'bg-slate-100 text-slate-800 border-slate-200 hover:bg-slate-200'
-              }`}
-            >
-              <Settings className="w-4 h-4 text-[#D80050]" />
-              <span>Configuração de Capas</span>
-            </button>
-
             <button
               onClick={() => handleNav('/envie-seu-projeto')}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-[#D80050] hover:bg-[#be0044] text-white font-bold text-xs uppercase tracking-wider transition shadow-sm"
