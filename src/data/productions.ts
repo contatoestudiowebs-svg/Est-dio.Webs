@@ -112,6 +112,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     featured: true,
     highlightOrder: 5,
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png',
     synopsis: 'Miguel é um jovem do Vidigal, estudante de Jornalismo, apaixonado por comunicação e engajado nas causas da comunidade. Criado por Griselda e Eduardo, ele é querido por todos, mas carrega marcas de um amor mal resolvido com Juan, que abalou sua autoestima. Do outro lado da cidade está Rodrigo, um engenheiro ambicioso, bem-sucedido e solitário, que esconde seus conflitos pessoais atrás da carreira. Dividido entre desejos e aparências, ele vive relações vazias até se envolver com Jhonatan, um homem sedutor e interesseiro.\n\nOs caminhos de Miguel e Rodrigo se cruzam após um escândalo empresarial, quando um confronto profissional se transforma em atração. Entre choques, descobertas e paixão, eles se aproximam cada vez mais. Enquanto Miguel apresenta a força da vida na comunidade, Jhonatan fará de tudo para impedir esse amor. No contraste entre o Vidigal e o mundo dos negócios, os dois precisarão enfrentar preconceitos, ambições e seus próprios medos para viver um sentimento intenso e transformador.',
     episodes: generateUnits(25, 'capítulos')
   },
@@ -124,6 +125,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 16,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_8abfe7f8146048788a481427bfb9c63b~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_8abfe7f8146048788a481427bfb9c63b~mv2.png',
     synopsis: 'Marcelo é um jovem sonhador. Cresceu vendo sua mãe ouvir Edith Piaf e acabou se tornando um grande fã da cantora. E hoje ele divide seu tempo entre trabalho, como lavador de pratos, e pequenas apresentações nas noites, onde interpreta as músicas de Edith Piaf. Seus pais descobrem o que ele faz nas noites e expulsam Marcelo de casa. Marcelo vê uma oportunidade de mudar de vida e viver seu sonho quando abrem inscrições para uma seleção de talentos para um grande teatro da cidade. Marcelo é inscrito por sua amiga. No dia de sua apresentação, Marcelo dá um show como Edith Piaf, todos se encantam com a incrível apresentação.',
     episodes: generateUnits(16, 'capítulos')
   },
@@ -163,6 +165,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 16,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_326fcfe93cc7437b8ab7d385cc46b378~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_326fcfe93cc7437b8ab7d385cc46b378~mv2.png',
     synopsis: 'Bás Avelar, herdeiro de uma família rica, sempre obteve tudo o que desejou, exceto um amor genuíno. Sua relação com Alesso, um homem intenso, controlador e sedutor, revela-se sua maior contradição. Alesso, por sua vez, não ama Bás, vendo-o apenas como um meio de manter seu estilo de vida luxuoso após a ruína financeira de seu pai, Bonjo. O casamento com Bás surge como a solução para escapar da miséria. Seguro da dependência emocional de Bás, Alesso o manipula e trai constantemente, certo de que o noivo sempre retornará. Em paralelo, Cássian, um jovem sonhador, gentil e ingênuo, observa a vida alheia na sapataria onde trabalha com sua amiga Lana. Ele se encanta por Bás, idealizando-o como um “príncipe encantado dos sapatos de couro ecológico”. Surpreendentemente, Bás o convida para sair, um gesto que Cássian desconhece ser apenas uma tentativa de despertar ciúmes em Alesso, sem intenção real de um encontro. Logo, Cássian percebe a ilusão em que se envolveu.',
     episodes: generateUnits(16, 'capítulos')
   },
@@ -188,6 +191,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 16,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_cf3ab50200af4a9da3577418d1db1b25~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_cf3ab50200af4a9da3577418d1db1b25~mv2.png',
     synopsis: 'Carol, Isadora e Tamara estão de volta. Nessa segunda temporada, As Mina vão enfrentar problemas com suas respectivas mães. Carol terá que lidar com as cobranças de sua mãe Olga, que depois que descobre a traição de Bruno, passa a administrar a carreira da filha. Já Isadora passará por um momento delicado: sua mãe Aurora descobre um câncer. Isa ficará responsável por administrar os negócios da mãe. E Tamara terá que lidar com a volta de sua mãe Salete, que era dada como morta. E esse é o menor dos problemas. Salete passa a tomar o dinheiro que Tamara recebe como salário, trabalhando na lanchonete.',
     episodes: generateUnits(16, 'episódios')
   },
@@ -226,6 +230,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 35,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_67a3c93990124e7cbef2fa9b05ba8f22~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_67a3c93990124e7cbef2fa9b05ba8f22~mv2.png',
     synopsis: 'Órfã desde criança, Asha sempre sonhou em encontrar seu pai biológico. Aos vinte e dois anos, ela decide seguir essa busca, mas o que parecia um simples desejo de pertencimento a arrasta para uma realidade sombria e perigosa — onde os laços de sangue podem ser tanto uma bênção quanto uma maldição, e onde, para conseguir o que quer, talvez ela precise pagar um preço alto demais.',
     episodes: generateUnits(35, 'capítulos')
   },
@@ -251,6 +256,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 18,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_6fc924ffddf24c0b846d2d6472f8299a~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_6fc924ffddf24c0b846d2d6472f8299a~mv2.png',
     synopsis: 'Em busca de uma vida melhor, após enfrentar dificuldades em Belém de Judá, Elimeleque decide se mudar com sua esposa Noemi e seus filhos, Malom e Quiliom para Moabe. Na terra estrangeira, Noemi e seus filhos sofrem a perda de Elimeleque. É quando Rute entra na vida de Noemi. Ela começa a se encontrar com Malom, e Quiliom com Orfa. Entre idas e vindas, eles se casam. E Noemi tem mais um momento difícil em sua vida quando perde seus dois filhos. Rute e Orfa acabam ficando viúvas. É quando Noemi decide voltar para Belém. Com uma profunda devoção, Rute declara: “Onde você for, irei; onde você ficar, ficarei.” Em Belém, ela trabalha arduamente para sustentar ambas, colhendo espigas em campos. Sua dedicação chama a atenção de Boaz, um parente rico de Noemi, que se torna seu protetor e eventual redentor.',
     episodes: generateUnits(18, 'capítulos')
   },
@@ -289,6 +295,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 21,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_1781c057924d42a4ac6ddabec34f3ee1~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_1781c057924d42a4ac6ddabec34f3ee1~mv2.png',
     synopsis: 'Em uma noite tempestuosa e fatídica os destinos de Aquiles e André acabam se cruzando. André, embora de família rica, passou a morar nas ruas por ser um dependente químico e, na porta de uma igreja, era acometido por uma overdose. Prestes a morrer, o jovem é acudido por Aquiles, que estava a caminho do baile de formatura do ensino médio quando o ônibus quebrou e o mesmo precisou buscar abrigo na igreja. Inconsciente da tragédia que era a vida do rapaz, André acaba ficando com uma correntinha que Aquiles carregava no pescoço, o que viria a se tornar a única lembrança física da pessoa que salvou sua vida e combustível para sua busca por essa pessoa durante anos e anos a fio.',
     episodes: generateUnits(21, 'capítulos')
   },
@@ -301,6 +308,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 20,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_76db79f328ee4d27809aab184860b4ba~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_76db79f328ee4d27809aab184860b4ba~mv2.png',
     synopsis: 'O que leva alguém a querer se vingar? Elizabeth culpa sua irmã Cristina por tudo o que deu errado em sua vida. E para se vingar da irmã, Elizabeth vai se envolver com seu sobrinho, Pedro, para tomar tudo o que é dele e ter sua vingança. Com a ajuda de Maurílio, Elizabeth colocará seu plano em prática, mas o destino prepara situações que podem atrapalhar Elizabeth de realizar sua vingança. Remake da história original exibida em 2015 no ADNTV.',
     episodes: generateUnits(20, 'capítulos')
   },
@@ -313,6 +321,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 12,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_4eded516fbfb41a3a884ea530520beb1~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_4eded516fbfb41a3a884ea530520beb1~mv2.png',
     synopsis: 'Thales fugiu de sua cidade natal para evitar seu amor de adolescência pelo rústico Joca, mas retorna à pitoresca cidade de Graçaville anos depois, no intuito de vender a fazenda de sua avó falecida para evitar seu declínio financeiro. Pensando que Joca é um heterossexual convicto, Thales mal sabe que seu amigo também guarda segredos profundos. Acontece que Joca secretamente é apaixonado por Thales, mas agora o odeia por tê-lo abandonado e aos velhos amigos.',
     episodes: generateUnits(12, 'capítulos')
   },
@@ -325,6 +334,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 15,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_abde23eba1b647d7a3d370e1a6a304d2~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_abde23eba1b647d7a3d370e1a6a304d2~mv2.png',
     synopsis: 'Débora e Rebeca, esposas aparentemente convencionais em 1928, vivem em uma sociedade regida por normas estritas. Seu destino se entrelaça em um encontro secreto, desafiando as convenções sociais. À medida que compartilham segredos e desenvolvem uma conexão proibida, enfrentam o dilema doloroso de seguir seus corações sem destruir suas vidas. Débora e Rebeca é uma comovente história de amor proibido e coragem, uma jornada de autodescoberta e a luta por felicidade em um mundo que exige conformidade, desafiando normas e redefinindo coragem e lealdade.',
     episodes: generateUnits(15, 'capítulos')
   },
@@ -350,6 +360,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 20,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_d43f0a0c15674fc797184d3c03eb81da~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_d43f0a0c15674fc797184d3c03eb81da~mv2.png',
     synopsis: 'Amélia sempre foi uma jovem esforçada. Ela decide se mudar para a capital do Rio de Janeiro com seu pai, Alberto, em busca de encontrar sua mãe. Só que ela conhece Samuel. Nos primeiros encontros, ela o destratará, mas ele não desistirá assim tão fácil dela. O maior problema é que ele tem um namoro mal resolvido com Rafaela, a garota popular do colégio ACESSO onde eles estudam. Para deixar esse conflito ainda mais interessante, Amélia passa a trabalhar na casa de Rafaela.',
     episodes: generateUnits(20, 'capítulos')
   },
@@ -362,6 +373,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'episódios',
     totalUnits: 25,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png',
     synopsis: 'No início da adolescência, Beatriz (Bita) perde seu pai Robério. Anos depois descobre que a morte do seu pai foi por negligência dos patrões dele Marcelo e Regina, que o acusaram de roubar o diamante Topázio. Bita acredita na inocência do pai e promete vingança. Por ironia do destino consegue um trabalho como babá na casa da família Topázio. Lá ela luta para descobrir os segredos da família e destruir com todos. Bita conta com a ajuda de Ítalo, sobrinho de Marcelo, e Agnes, irmã de Marcelo. Os dois querem algo na empresa de Marcelo e passaram a chantagear Lucas. Bita descobre segredos e consegue a vingança que tanto planejou.',
     episodes: generateUnits(25, 'episódios')
   },
@@ -374,6 +386,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     unitType: 'capítulos',
     totalUnits: 31,
     status: 'Finalizada',
+    coverImage: 'https://static.wixstatic.com/media/cbfc82_942fc93608c44ae99f933eb023b12bc3~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_942fc93608c44ae99f933eb023b12bc3~mv2.png',
     synopsis: 'Felippo e Elói eram amigos inseparáveis quando crianças, mas essa amizade é brutalmente interrompida pela ignorância e impetuosidade de Alberto, pai de Felippo, que nunca enxergou com bons olhos o sentimento que os dois nutriam um pelo outro. Anos depois, já adultos, os caminhos dos dois rapazes se cruzam novamente e um sentimento nasce a partir da maneira como cada um deles enxerga a vida. Amar a Seu Modo narra as diferentes maneiras de amar, e o amor em seus mais diversos modos.',
     episodes: generateUnits(31, 'capítulos')
   },

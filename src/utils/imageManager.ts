@@ -39,6 +39,32 @@ export const OFFICIAL_COVERS_REGISTRY: Record<string, string> = {
     'https://static.wixstatic.com/media/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bc4859489b434059b3490eca04ac8b1d~mv2.png',
   'um-novo-rei-1-temporada':
     'https://static.wixstatic.com/media/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_c64e16466fcb49278c87acf083f99b97~mv2.png',
+  'acesso-1':
+    'https://static.wixstatic.com/media/cbfc82_d43f0a0c15674fc797184d3c03eb81da~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_d43f0a0c15674fc797184d3c03eb81da~mv2.png',
+  'amar-a-seu-modo':
+    'https://static.wixstatic.com/media/cbfc82_942fc93608c44ae99f933eb023b12bc3~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_942fc93608c44ae99f933eb023b12bc3~mv2.png',
+  'as-mina-parte-2':
+    'https://static.wixstatic.com/media/cbfc82_cf3ab50200af4a9da3577418d1db1b25~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_cf3ab50200af4a9da3577418d1db1b25~mv2.png',
+  'busca-de-bercos':
+    'https://static.wixstatic.com/media/cbfc82_67a3c93990124e7cbef2fa9b05ba8f22~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_67a3c93990124e7cbef2fa9b05ba8f22~mv2.png',
+  'coracoes-de-acucar':
+    'https://static.wixstatic.com/media/cbfc82_326fcfe93cc7437b8ab7d385cc46b378~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_326fcfe93cc7437b8ab7d385cc46b378~mv2.png',
+  'debora-e-rebeca':
+    'https://static.wixstatic.com/media/cbfc82_abde23eba1b647d7a3d370e1a6a304d2~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_abde23eba1b647d7a3d370e1a6a304d2~mv2.png',
+  'destino-ao-coracao':
+    'https://static.wixstatic.com/media/cbfc82_4eded516fbfb41a3a884ea530520beb1~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_4eded516fbfb41a3a884ea530520beb1~mv2.png',
+  'eu-sou-piaf':
+    'https://static.wixstatic.com/media/cbfc82_8abfe7f8146048788a481427bfb9c63b~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_8abfe7f8146048788a481427bfb9c63b~mv2.png',
+  'nada-alem-do-seu-amor':
+    'https://static.wixstatic.com/media/cbfc82_1781c057924d42a4ac6ddabec34f3ee1~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_1781c057924d42a4ac6ddabec34f3ee1~mv2.png',
+  'rute':
+    'https://static.wixstatic.com/media/cbfc82_6fc924ffddf24c0b846d2d6472f8299a~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_6fc924ffddf24c0b846d2d6472f8299a~mv2.png',
+  'sangue-cruzado':
+    'https://static.wixstatic.com/media/cbfc82_76db79f328ee4d27809aab184860b4ba~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_76db79f328ee4d27809aab184860b4ba~mv2.png',
+  'socio-do-amor':
+    'https://static.wixstatic.com/media/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png',
+  'topazio':
+    'https://static.wixstatic.com/media/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png',
 };
 
 export function getSavedCovers(): Record<string, string> {
