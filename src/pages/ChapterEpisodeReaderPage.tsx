@@ -18,10 +18,12 @@ import {
   FileDown,
   Sparkles,
   Layers,
-  Eye
+  Eye,
+  MessageSquare
 } from 'lucide-react';
 import { getProductionBySlug } from '../data/productions';
 import { SEOHead } from '../components/SEOHead';
+import { ChapterCommentsSection } from '../components/ChapterCommentsSection';
 
 interface ChapterEpisodeReaderPageProps {
   productionSlug: string;
@@ -705,6 +707,15 @@ export function ChapterEpisodeReaderPage({
           </div>
         </div>
       )}
+
+      {/* Reader Comments Section */}
+      <ChapterCommentsSection
+        productionTitle={production.title}
+        productionSlug={production.slug}
+        chapterSlug={currentUnit?.slug || chapterSlug}
+        unitLabel={currentUnit?.label || unitLabelSingular}
+        authorName={production.author}
+      />
 
       {/* Bottom Navigation Buttons */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
