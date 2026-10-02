@@ -65,6 +65,8 @@ export const OFFICIAL_COVERS_REGISTRY: Record<string, string> = {
     'https://static.wixstatic.com/media/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_9ada38d3744c4f66a4c6a0c377b41f06~mv2.png',
   'topazio':
     'https://static.wixstatic.com/media/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_bddc617935314ef48dffa8bbf62515a7~mv2.png',
+  'terra-de-bravos':
+    'https://static.wixstatic.com/media/cbfc82_451c396f6dad4600a4d7fd75c97beaab~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_451c396f6dad4600a4d7fd75c97beaab~mv2.png',
 };
 
 export function getSavedCovers(): Record<string, string> {
