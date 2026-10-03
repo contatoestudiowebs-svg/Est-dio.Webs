@@ -1,6 +1,6 @@
 export type ProductionCategory = 'Web novela' | 'Web série';
 
-export type ProductionStatus = 'Finalizada';
+export type ProductionStatus = 'Finalizada' | 'Estreia dia 11 de Janeiro' | 'Em Breve';
 
 export type UnitType = 'capítulos' | 'episódios';
 

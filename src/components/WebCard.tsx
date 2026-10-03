@@ -101,7 +101,13 @@ export function WebCard({ production, onNavigate, compact = false }: WebCardProp
           </div>
 
           <div className="absolute top-2 right-2 z-10 pointer-events-none">
-            <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs">
+            <span
+              className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded shadow-xs ${
+                production.status === 'Finalizada'
+                  ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                  : 'bg-amber-400 text-slate-950 border border-amber-300 font-black'
+              }`}
+            >
               {production.status}
             </span>
           </div>

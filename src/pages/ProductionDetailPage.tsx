@@ -197,8 +197,18 @@ export function ProductionDetailPage({ slug, onNavigate }: ProductionDetailPageP
                 {production.category}
               </span>
 
-              <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span
+                className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md shadow-xs flex items-center gap-1.5 ${
+                  production.status === 'Finalizada'
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                    : 'bg-amber-400 text-slate-950 border border-amber-300 font-black'
+                }`}
+              >
+                <span
+                  className={`w-2 h-2 rounded-full ${
+                    production.status === 'Finalizada' ? 'bg-emerald-500 animate-pulse' : 'bg-rose-600 animate-pulse'
+                  }`}
+                />
                 Status: {production.status}
               </span>
 
@@ -222,6 +232,23 @@ export function ProductionDetailPage({ slug, onNavigate }: ProductionDetailPageP
                 <span>{copied ? 'Link Copiado!' : 'Compartilhar'}</span>
               </button>
             </div>
+
+            {/* Premiere Banner if upcoming */}
+            {production.status.includes('Estreia') && (
+              <div className="mb-6 p-4 rounded-xl bg-gradient-to-r from-amber-50 to-rose-50 border border-amber-200 flex items-center gap-3 shadow-2xs">
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#D80050] to-amber-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <Calendar className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-xs font-black uppercase tracking-wider text-rose-950">
+                    Estreia Confirmada na Grade
+                  </div>
+                  <div className="text-xs text-slate-700 mt-0.5">
+                    Esta nova web novela de <strong className="text-slate-900">{production.author}</strong> estreia dia <strong className="text-slate-900 font-black">11 de janeiro</strong> no Estúdio Webs!
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* Title */}
             <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-brand mb-3">
