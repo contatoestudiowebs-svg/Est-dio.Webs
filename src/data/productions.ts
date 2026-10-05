@@ -1,5 +1,6 @@
 import { WebProduction, UnitType, ChapterEpisode } from '../types';
 import { RASGA_MORTALHA_2_EPISODES } from './rasgaMortalha2Data';
+import { COLD_CASE_BRASIL_EPISODES } from './coldCaseData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -61,7 +62,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     highlightOrder: 2,
     coverImage: 'https://static.wixstatic.com/media/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_fde61471066b4daab6be2def3a9f96b2~mv2.png',
     synopsis: 'Inspirada no clássico americano Cold Case, Cold Case Brasil traz uma versão nacional intensa, humana e profundamente emocional sobre crimes esquecidos pelo tempo. A cada episódio, a investigadora Laura e sua equipe reabrem casos arquivados que pareciam condenados ao silêncio. Munidos de novas pistas, testemunhas que decidiram falar décadas depois e segredos enterrados, eles mergulham em histórias marcadas por dor, injustiça, paixão, ambição e arrependimento.\n\nMais do que descobrir assassinos, Cold Case Brasil busca devolver voz às vítimas, respostas às famílias e verdade a quem foi apagado pela passagem dos anos.\n\nSombria, emocionante e cheia de reviravoltas, a série mistura investigação policial com fortes dramas humanos — mostrando que algumas verdades nunca morrem.',
-    episodes: generateUnits(6, 'episódios')
+    episodes: COLD_CASE_BRASIL_EPISODES
   },
   {
     id: 'um-novo-rei-2',

@@ -94,6 +94,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcut for /cold-case-brasil
+    if (pathOnly === '/cold-case-brasil') {
+      return <ProductionDetailPage slug="cold-case-brasil" onNavigate={navigate} />;
+    }
+    const coldCaseChapterMatch = pathOnly.match(/^\/cold-case-brasil\/([^/]+)$/);
+    if (coldCaseChapterMatch) {
+      const [, chapterSlug] = coldCaseChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="cold-case-brasil"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {
