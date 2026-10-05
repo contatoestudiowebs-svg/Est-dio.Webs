@@ -226,8 +226,6 @@ export function CommunityStoryPlayerModal({
                 <span>{story.totalEpisodes} episódios</span>
                 <span>•</span>
                 <span>{story.durationTotal}</span>
-                <span>•</span>
-                <span className="text-[#efae54] font-semibold">★ {story.rating}</span>
               </div>
 
               <h3 className="text-lg sm:text-xl font-black text-white font-brand">

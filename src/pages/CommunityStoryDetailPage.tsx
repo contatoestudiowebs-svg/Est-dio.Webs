@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   ArrowLeft,
   Play,
-  Star,
   Clock,
   Calendar,
   User,
@@ -40,25 +39,22 @@ export function CommunityStoryDetailPage({
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   const [selectedEpNumber, setSelectedEpNumber] = useState(1);
   const [copied, setCopied] = useState(false);
-  const [userRating, setUserRating] = useState<number | null>(null);
-  const [userReview, setUserReview] = useState('');
-  const [reviewsList, setReviewsList] = useState<
-    Array<{ name: string; text: string; rating: number; date: string }>
+  const [userComment, setUserComment] = useState('');
+  const [commentsList, setCommentsList] = useState<
+    Array<{ name: string; text: string; date: string }>
   >([
     {
       name: 'Vinicius F.',
       text: 'Uma das melhores produções que já vi na comunidade! A direção de arte e os diálogos são impressionantes.',
-      rating: 5,
       date: 'Há 2 dias'
     },
     {
       name: 'Larissa Moura',
       text: 'O gancho final do episódio 3 me deixou arrepiada. Parabéns ao criador!',
-      rating: 5,
       date: 'Há 5 dias'
     }
   ]);
-  const [reviewSuccess, setReviewSuccess] = useState(false);
+  const [commentSuccess, setCommentSuccess] = useState(false);
 
   if (!story) {
     return (
@@ -90,21 +86,20 @@ export function CommunityStoryDetailPage({
     setIsPlayerOpen(true);
   };
 
-  const handleAddReview = (e: React.FormEvent) => {
+  const handleAddComment = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userReview.trim()) return;
-    setReviewsList([
+    if (!userComment.trim()) return;
+    setCommentsList([
       {
         name: 'Você (Leitor)',
-        text: userReview.trim(),
-        rating: userRating || 5,
+        text: userComment.trim(),
         date: 'Agora mesmo'
       },
-      ...reviewsList
+      ...commentsList
     ]);
-    setUserReview('');
-    setReviewSuccess(true);
-    setTimeout(() => setReviewSuccess(false), 3000);
+    setUserComment('');
+    setCommentSuccess(true);
+    setTimeout(() => setCommentSuccess(false), 3000);
   };
 
   return (
@@ -184,12 +179,6 @@ export function CommunityStoryDetailPage({
               <div className="flex items-center gap-2.5 flex-wrap">
                 <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-lg bg-[#512f2e] text-[#efae54] border border-[#efae54]/40">
                   {story.category}
-                </span>
-
-                <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-black/60 text-[#efae54] border border-[#efae54]/30 flex items-center gap-1">
-                  <Star className="w-3.5 h-3.5 fill-[#efae54]" />
-                  <span>{story.rating.toFixed(1)}</span>
-                  <span className="text-slate-400 font-normal">({story.votesCount} avaliações)</span>
                 </span>
 
                 <span className="text-xs text-slate-400 font-medium">
@@ -397,19 +386,16 @@ export function CommunityStoryDetailPage({
 
                 <div>
                   <span className="text-slate-500 block text-[10px] font-bold uppercase tracking-wider">
-                    Avaliação da Comunidade
+                    Formato
                   </span>
-                  <strong className="text-[#efae54] text-sm flex items-center gap-1">
-                    <Star className="w-3.5 h-3.5 fill-[#efae54]" />
-                    {story.rating} / 10
-                  </strong>
+                  <strong className="text-white text-sm">{story.badge}</strong>
                 </div>
 
                 <div>
                   <span className="text-slate-500 block text-[10px] font-bold uppercase tracking-wider">
-                    Formato
+                    Exibição
                   </span>
-                  <strong className="text-white text-sm">{story.badge}</strong>
+                  <strong className="text-white text-sm">Estúdio Webs Comunidade</strong>
                 </div>
               </div>
 
@@ -429,65 +415,42 @@ export function CommunityStoryDetailPage({
               </div>
             </div>
 
-            {/* Community Review / Feedback submission */}
+            {/* Community Comments submission */}
             <div className="lg:col-span-5 p-6 rounded-2xl bg-[#120d0d] border border-[#512f2e]/60 space-y-4">
               <h3 className="text-sm font-black uppercase tracking-wider text-[#efae54] flex items-center gap-1.5">
                 <MessageSquare className="w-4 h-4 text-[#efae54]" />
-                <span>Avaliar & Comentar</span>
+                <span>Comentários da Comunidade</span>
               </h3>
 
-              <form onSubmit={handleAddReview} className="space-y-3">
-                <div>
-                  <label className="block text-[11px] text-slate-400 mb-1">Sua Nota</label>
-                  <div className="flex items-center gap-1.5">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <button
-                        key={star}
-                        type="button"
-                        onClick={() => setUserRating(star)}
-                        className="p-1 text-[#efae54] transition hover:scale-125"
-                      >
-                        <Star
-                          className={`w-5 h-5 ${
-                            (userRating || 5) >= star ? 'fill-[#efae54]' : 'text-slate-600'
-                          }`}
-                        />
-                      </button>
-                    ))}
-                    <span className="text-xs text-slate-400 ml-2">
-                      {userRating ? `${userRating * 2}/10` : '10/10'}
-                    </span>
-                  </div>
-                </div>
-
+              <form onSubmit={handleAddComment} className="space-y-3">
                 <div>
                   <textarea
-                    value={userReview}
-                    onChange={(e) => setUserReview(e.target.value)}
-                    rows={2}
-                    placeholder="Deixe sua crítica, elogio ou teoria sobre esta história da comunidade..."
+                    value={userComment}
+                    onChange={(e) => setUserComment(e.target.value)}
+                    rows={3}
+                    placeholder="Deixe seu comentário, elogio ou teoria sobre esta história da comunidade..."
                     className="w-full bg-[#181111] border border-[#512f2e]/50 focus:border-[#efae54] text-xs text-white placeholder-slate-500 rounded-xl p-3 focus:outline-none transition resize-none font-reading"
                   />
                 </div>
 
-                {reviewSuccess && (
+                {commentSuccess && (
                   <p className="text-xs text-emerald-400 font-bold">
-                    Obrigado! Sua avaliação foi registrada na comunidade.
+                    Obrigado! Seu comentário foi publicado na comunidade.
                   </p>
                 )}
 
                 <button
                   type="submit"
-                  className="w-full py-2 rounded-xl bg-[#512f2e] hover:bg-[#efae54] hover:text-black text-white text-xs font-bold uppercase tracking-wider transition border border-[#efae54]/40 flex items-center justify-center gap-2"
+                  className="w-full py-2.5 rounded-xl bg-[#512f2e] hover:bg-[#efae54] hover:text-black text-white text-xs font-bold uppercase tracking-wider transition border border-[#efae54]/40 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Send className="w-3.5 h-3.5" />
-                  <span>Publicar Avaliação</span>
+                  <span>Publicar Comentário</span>
                 </button>
               </form>
 
-              {/* Sample reviews */}
+              {/* Sample comments */}
               <div className="pt-3 border-t border-[#512f2e]/40 space-y-2.5">
-                {reviewsList.slice(0, 2).map((rev, idx) => (
+                {commentsList.slice(0, 2).map((rev, idx) => (
                   <div key={idx} className="p-2.5 rounded-xl bg-[#181111] border border-[#512f2e]/30 text-xs">
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-bold text-white">{rev.name}</span>

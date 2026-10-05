@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Play, Sparkles, Clock, Film } from 'lucide-react';
+import { Play, Sparkles, Clock, Film } from 'lucide-react';
 import { CommunityStory } from '../data/communityData';
 
 interface CommunityStoryCardProps {
@@ -26,15 +26,10 @@ export function CommunityStoryCard({ story, onSelectStory }: CommunityStoryCardP
         <div className="absolute inset-0 bg-gradient-to-t from-[#110c0c] via-transparent to-black/60" />
 
         {/* Top Badges */}
-        <div className="absolute top-2.5 inset-x-2.5 flex items-center justify-between z-10">
+        <div className="absolute top-2.5 left-2.5 z-10">
           <span className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#512f2e]/90 text-[#efae54] border border-[#efae54]/30 backdrop-blur-md flex items-center gap-1 shadow-xs">
             <Sparkles className="w-2 h-2 text-[#efae54]" />
             Comunidade
-          </span>
-
-          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-black/75 text-[#efae54] border border-[#efae54]/20 backdrop-blur-md flex items-center gap-1">
-            <Star className="w-2.5 h-2.5 fill-[#efae54] text-[#efae54]" />
-            <span>{story.rating.toFixed(1)}</span>
           </span>
         </div>
 

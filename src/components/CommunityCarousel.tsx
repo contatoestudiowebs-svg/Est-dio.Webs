@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   ChevronLeft,
   ChevronRight,
-  Star,
   Play,
   Sparkles,
   Film,
@@ -170,17 +169,11 @@ export function CommunityCarousel({
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
 
                 {/* Top Badges */}
-                <div className="absolute top-3.5 inset-x-3.5 flex items-center justify-between z-10">
+                <div className="absolute top-3.5 left-3.5 z-10">
                   {/* Community origin badge */}
                   <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#512f2e]/90 text-[#efae54] border border-[#efae54]/30 backdrop-blur-md flex items-center gap-1 shadow-sm">
                     <Sparkles className="w-2.5 h-2.5 text-[#efae54]" />
                     Comunidade
-                  </span>
-
-                  {/* Rating */}
-                  <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-black/70 text-[#efae54] border border-[#efae54]/20 backdrop-blur-md flex items-center gap-1">
-                    <Star className="w-3 h-3 fill-[#efae54] text-[#efae54]" />
-                    <span>{story.rating.toFixed(1)}</span>
                   </span>
                 </div>
 

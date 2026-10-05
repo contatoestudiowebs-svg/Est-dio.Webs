@@ -1,22 +1,16 @@
 import React, { useState } from 'react';
 import {
   Sparkles,
-  Flame,
-  Clock,
-  Star,
   Film,
   Compass,
   PlusCircle,
   ArrowRight,
-  TrendingUp,
   Search
 } from 'lucide-react';
 import {
   COMMUNITY_STORIES,
   getFeaturedCommunityStories,
-  getPopularCommunityStories,
   getNewCommunityStories,
-  getShortCommunityStories,
   CommunityStory
 } from '../data/communityData';
 import { CommunityCarousel } from '../components/CommunityCarousel';
@@ -35,9 +29,7 @@ export function CommunityPage({ onNavigate }: CommunityPageProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const featuredStories = getFeaturedCommunityStories();
-  const popularStories = getPopularCommunityStories();
   const newStories = getNewCommunityStories();
-  const shortStories = getShortCommunityStories();
 
   const categories = [
     'all',
@@ -182,36 +174,7 @@ export function CommunityPage({ onNavigate }: CommunityPageProps) {
       {/* Discovery Sections */}
       {!searchQuery && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14 py-8">
-          {/* Section 1: Mais Populares */}
-          <section>
-            <div className="flex items-end justify-between mb-6 pb-2.5 border-b border-[#512f2e]/40">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#512f2e] text-[#efae54] flex items-center justify-center">
-                  <Flame className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#efae54]">
-                    Top Avaliações da Audiência
-                  </span>
-                  <h2 className="text-xl sm:text-2xl font-black text-white font-brand tracking-tight">
-                    Mais Populares
-                  </h2>
-                </div>
-              </div>
-
-              <span className="text-xs text-slate-400 font-medium hidden sm:inline">
-                As histórias mais curtidas e comentadas
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-              {popularStories.map((story) => (
-                <CommunityStoryCard key={story.id} story={story} onSelectStory={handleSelectStory} />
-              ))}
-            </div>
-          </section>
-
-          {/* Section 2: Novas Histórias */}
+          {/* Novas Histórias */}
           <section>
             <div className="flex items-end justify-between mb-6 pb-2.5 border-b border-[#512f2e]/40">
               <div className="flex items-center gap-2.5">
@@ -220,7 +183,7 @@ export function CommunityPage({ onNavigate }: CommunityPageProps) {
                 </div>
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-widest text-[#efae54]">
-                    Recém-Chegadas
+                    Catálogo de Mini Web Séries
                   </span>
                   <h2 className="text-xl sm:text-2xl font-black text-white font-brand tracking-tight">
                     Novas Histórias
@@ -229,70 +192,12 @@ export function CommunityPage({ onNavigate }: CommunityPageProps) {
               </div>
 
               <span className="text-xs text-slate-400 font-medium hidden sm:inline">
-                Estreias recentes da nossa comunidade
+                Estreias da nossa comunidade criativa
               </span>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-              {newStories.map((story) => (
-                <CommunityStoryCard key={story.id} story={story} onSelectStory={handleSelectStory} />
-              ))}
-            </div>
-          </section>
-
-          {/* Section 3: Em Destaque */}
-          <section>
-            <div className="flex items-end justify-between mb-6 pb-2.5 border-b border-[#512f2e]/40">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#512f2e] text-[#efae54] flex items-center justify-center">
-                  <Star className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#efae54]">
-                    Seleção dos Curadores
-                  </span>
-                  <h2 className="text-xl sm:text-2xl font-black text-white font-brand tracking-tight">
-                    Em Destaque
-                  </h2>
-                </div>
-              </div>
-
-              <span className="text-xs text-slate-400 font-medium hidden sm:inline">
-                Recomendadas pelo conselho do Estúdio Webs
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-              {featuredStories.map((story) => (
-                <CommunityStoryCard key={story.id} story={story} onSelectStory={handleSelectStory} />
-              ))}
-            </div>
-          </section>
-
-          {/* Section 4: Histórias Curtas */}
-          <section>
-            <div className="flex items-end justify-between mb-6 pb-2.5 border-b border-[#512f2e]/40">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#512f2e] text-[#efae54] flex items-center justify-center">
-                  <Clock className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-[#efae54]">
-                    Maratona Rápida
-                  </span>
-                  <h2 className="text-xl sm:text-2xl font-black text-white font-brand tracking-tight">
-                    Histórias Curtas
-                  </h2>
-                </div>
-              </div>
-
-              <span className="text-xs text-slate-400 font-medium hidden sm:inline">
-                Mini web séries completas para maratonar em até 45 min
-              </span>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-              {shortStories.map((story) => (
+              {COMMUNITY_STORIES.map((story) => (
                 <CommunityStoryCard key={story.id} story={story} onSelectStory={handleSelectStory} />
               ))}
             </div>
