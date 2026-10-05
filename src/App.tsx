@@ -13,6 +13,8 @@ import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { SubmitProjectPage } from './pages/SubmitProjectPage';
 import { ConfiguracoesPage } from './pages/ConfiguracoesPage';
+import { CommunityPage } from './pages/CommunityPage';
+import { CommunityStoryDetailPage } from './pages/CommunityStoryDetailPage';
 import { ProductionCategory } from './types';
 import { ManagerProvider, useManager } from './utils/managerAuth';
 import { ManagerModal, ManagerFloatingBar } from './components/ManagerModal';
@@ -103,6 +105,18 @@ function AppContent() {
     if (pathOnly === '/webs') {
       const catParam = searchParams.get('categoria') as ProductionCategory | null;
       return <CatalogPage onNavigate={navigate} initialCategory={catParam || undefined} />;
+    }
+
+    // Community Story Detail: /comunidade/:slug
+    const communityStoryMatch = pathOnly.match(/^\/comunidade\/([^/]+)$/);
+    if (communityStoryMatch) {
+      const [, slug] = communityStoryMatch;
+      return <CommunityStoryDetailPage slug={slug} onNavigate={navigate} />;
+    }
+
+    // Community Home: /comunidade
+    if (pathOnly === '/comunidade') {
+      return <CommunityPage onNavigate={navigate} />;
     }
 
     // 5. Categories: /categorias

@@ -26,6 +26,7 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
   const navLinks = [
     { label: 'INÍCIO', path: '/' },
     { label: 'WEBS', path: '/webs' },
+    { label: 'COMUNIDADE', path: '/comunidade' },
     { label: 'CATEGORIAS', path: '/categorias' },
     { label: 'AUTORES', path: '/autores' },
     { label: 'SOBRE', path: '/sobre' },

@@ -77,6 +77,14 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li>
                 <button
+                  onClick={() => onNavigate('/comunidade')}
+                  className="hover:text-[#efae54] transition text-[#efae54] font-bold"
+                >
+                  ★ Comunidade (Mini Séries)
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => onNavigate('/webs?categoria=Web%20novela')}
                   className="hover:text-[#D80050] transition"
                 >
