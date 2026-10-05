@@ -33,6 +33,18 @@ export function CommunityStoryCard({ story, onSelectStory }: CommunityStoryCardP
           </span>
         </div>
 
+        <div className="absolute top-2.5 right-2.5 z-10">
+          <span
+            className={`text-[8px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full backdrop-blur-md border shadow-xs ${
+              story.status === 'Disponível'
+                ? 'bg-emerald-950/90 text-emerald-400 border-emerald-500/40'
+                : 'bg-[#512f2e]/95 text-[#efae54] border-[#efae54]/50'
+            }`}
+          >
+            {story.status}
+          </span>
+        </div>
+
         {/* Hover play reveal */}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           <div className="w-12 h-12 rounded-full bg-[#512f2e] text-[#efae54] border border-[#efae54] shadow-xl flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform duration-300">

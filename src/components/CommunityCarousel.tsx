@@ -177,6 +177,18 @@ export function CommunityCarousel({
                   </span>
                 </div>
 
+                <div className="absolute top-3.5 right-3.5 z-10">
+                  <span
+                    className={`text-[9px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full backdrop-blur-md border shadow-sm ${
+                      story.status === 'Disponível'
+                        ? 'bg-emerald-950/90 text-emerald-400 border-emerald-500/50'
+                        : 'bg-[#512f2e]/95 text-[#efae54] border-[#efae54]/60'
+                    }`}
+                  >
+                    {story.status}
+                  </span>
+                </div>
+
                 {/* Bottom Content Area */}
                 <div className="absolute bottom-0 inset-x-0 p-4 sm:p-5 flex flex-col justify-end z-10 bg-gradient-to-t from-[#0e0a0a] via-[#0e0a0a]/90 to-transparent pt-12">
                   <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#efae54] mb-1">

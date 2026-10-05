@@ -31,15 +31,7 @@ export function CommunityPage({ onNavigate }: CommunityPageProps) {
   const featuredStories = getFeaturedCommunityStories();
   const newStories = getNewCommunityStories();
 
-  const categories = [
-    'all',
-    'Ficção Científica',
-    'Suspense Psicológico',
-    'Thriller Noir',
-    'Fantasia Urbana',
-    'Cyberpunk & Sci-Fi',
-    'Mistério Costeiro'
-  ];
+  const categories = ['all', 'Drama', 'Épico Histórico', 'Fantasia'];
 
   const filteredStories = COMMUNITY_STORIES.filter((story) => {
     const matchesSearch =

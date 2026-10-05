@@ -177,6 +177,16 @@ export function CommunityStoryDetailPage({
             {/* Title & Metadata */}
             <div className="md:col-span-8 lg:col-span-8 space-y-4">
               <div className="flex items-center gap-2.5 flex-wrap">
+                <span
+                  className={`text-xs font-black uppercase tracking-wider px-3 py-1 rounded-lg border shadow-xs ${
+                    story.status === 'Disponível'
+                      ? 'bg-emerald-950/90 text-emerald-400 border-emerald-500/50'
+                      : 'bg-[#512f2e] text-[#efae54] border-[#efae54]/60'
+                  }`}
+                >
+                  {story.status}
+                </span>
+
                 <span className="text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-lg bg-[#512f2e] text-[#efae54] border border-[#efae54]/40">
                   {story.category}
                 </span>
@@ -375,6 +385,19 @@ export function CommunityStoryDetailPage({
                     Número de Episódios
                   </span>
                   <strong className="text-white text-sm">{story.totalEpisodes} episódios</strong>
+                </div>
+
+                <div>
+                  <span className="text-slate-500 block text-[10px] font-bold uppercase tracking-wider">
+                    Status Oficial
+                  </span>
+                  <strong
+                    className={`text-sm ${
+                      story.status === 'Disponível' ? 'text-emerald-400' : 'text-[#efae54]'
+                    }`}
+                  >
+                    {story.status}
+                  </strong>
                 </div>
 
                 <div>
