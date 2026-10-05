@@ -83,6 +83,28 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
             {navLinks.map((link) => {
               const active = isActive(link.path);
+              const isComunidade = link.path === '/comunidade';
+
+              if (isComunidade) {
+                return (
+                  <button
+                    key={link.path}
+                    onClick={() => handleNav(link.path)}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-black tracking-wider uppercase transition-all duration-200 relative flex items-center gap-1.5 shadow-xs cursor-pointer ${
+                      active
+                        ? 'bg-[#512f2e] text-[#efae54] border-2 border-[#efae54] shadow-[0_0_12px_rgba(239,174,84,0.35)]'
+                        : 'bg-[#512f2e] text-[#efae54] border border-[#efae54]/60 hover:bg-[#633a39] hover:border-[#efae54] hover:shadow-[0_0_8px_rgba(239,174,84,0.25)]'
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#efae54] animate-pulse" />
+                    <span>{link.label}</span>
+                    {active && (
+                      <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-[#efae54] rounded-full shadow-[0_0_6px_#efae54]" />
+                    )}
+                  </button>
+                );
+              }
+
               return (
                 <button
                   key={link.path}
@@ -143,6 +165,28 @@ export function Header({ currentPath, onNavigate, onOpenSearch }: HeaderProps) {
         <div className="lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
           {navLinks.map((link) => {
             const active = isActive(link.path);
+            const isComunidade = link.path === '/comunidade';
+
+            if (isComunidade) {
+              return (
+                <button
+                  key={link.path}
+                  onClick={() => handleNav(link.path)}
+                  className={`w-full flex items-center justify-between px-4 py-3 rounded-lg text-sm font-black tracking-wider uppercase text-left transition ${
+                    active
+                      ? 'bg-[#512f2e] text-[#efae54] border-2 border-[#efae54] shadow-md'
+                      : 'bg-[#512f2e] text-[#efae54] border border-[#efae54]/60 hover:bg-[#633a39]'
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#efae54] animate-pulse" />
+                    <span>{link.label}</span>
+                  </div>
+                  {active && <span className="w-2 h-2 rounded-full bg-[#efae54]" />}
+                </button>
+              );
+            }
+
             return (
               <button
                 key={link.path}
