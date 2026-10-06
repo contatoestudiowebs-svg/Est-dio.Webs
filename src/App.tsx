@@ -142,6 +142,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcuts for /pandorum-2 and /pandorum2
+    if (pathOnly === '/pandorum-2' || pathOnly === '/pandorum2') {
+      return <ProductionDetailPage slug="pandorum-2" onNavigate={navigate} />;
+    }
+    const pandorum2ChapterMatch = pathOnly.match(/^\/(?:pandorum-2|pandorum2)\/([^/]+)$/);
+    if (pandorum2ChapterMatch) {
+      const [, chapterSlug] = pandorum2ChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="pandorum-2"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {

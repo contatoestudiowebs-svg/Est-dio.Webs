@@ -1,0 +1,603 @@
+// PANDORUM 2 - 02x07 "A Decisão"
+// Série de Fernando Gibeli Ricoboni
+// Escrita por Fernando Gibeli Ricoboni
+
+export const EPISODE_07_PAGES: string[] = [
+  // Page 1
+  `ESTÚDIO.WEBS
+02 x 07
+
+PANDORUM
+
+Série de
+Fernando Gibeli Ricoboni
+
+Escrita por
+FERNANDO GIBELI RICOBONI
+
+“A DECISÃO”`,
+
+  // Page 2
+  `CENA 1 – EXT. MARGENS DO RIO ALUZ - NOITE
+
+A CÂMERA SE APROXIMA LENTAMENTE DA FIGURA DE HOLLER, CAÍDO NO CHÃO, COM UM TIRO FATAL NA CABEÇA. O SANGUE AINDA FRESCO FORMA UMA POÇA AO REDOR DELE, MISTURANDO-SE COM A TERRA. O SOM SUAVE DO RIO CORRENDO CONTRASTA COM A BRUTALIDADE DA MORTE DE HOLLER.
+
+GALENA, COM PASSOS FIRMES E DECIDIDOS, SE AFASTA DA CENA, DIRIGINDO-SE À AERONAVE QUE A AGUARDA AO LONGE. SEU ROSTO ESTÁ FRIO E IMPASSÍVEL, SEM VESTÍGIOS DE ARREPENDIMENTO.
+
+CÂMERA SE AFASTA LENTAMENTE, MOSTRANDO HOLLER ESTENDIDO NO CHÃO, SOLITÁRIO, ENQUANTO GALENA CONTINUA A CAMINHAR EM DIREÇÃO À FLORESTA.
+
+GALENA
+(subitamente, falando para si mesma enquanto caminha)
+A resistência só leva à morte. O Paraíso não tem lugar para os fracos.
+
+ELA PARA POR UM MOMENTO À BEIRA DA FLORESTA, OLHANDO PARA TRÁS, COMO SE CONFERISSE SE HAVIA DEIXADO TUDO EM ORDEM. SUA EXPRESSÃO É FRIA, CALCULISTA. APÓS ALGUNS SEGUNDOS, ELA CONTINUA SEU CAMINHO, DESAPARECENDO ENTRE AS ÁRVORES.
+
+FADE OUT.
+
+CENA 2 – EXT. - FLORESTA - NOITE
+
+A CENA ABRE COM UM PLANO FECHADO NOS PÉS DE YUMILETH, MOVENDO-SE COM DETERMINAÇÃO PELO CHÃO COBERTO DE FOLHAS. A CÂMERA LENTAMENTE SE AFASTA, REVELANDO QUE ELA ESTÁ LIDERANDO UM GRUPO EM FILA INDIANA. PETER CAMINHA LOGO ATRÁS DELA, SEGUIDO POR LYKA, TOMMY, OG, JEN, E MAKAR. NO FIM DA FILA, CIRO, ARMADO, MANTÉM SEUS OLHOS ATENTOS. NAS LATERAIS, BENDI E TREVOR, TAMBÉM ARMADOS, ESCOLTAM O GRUPO.
+
+O SOM DAS FOLHAS E GALHOS QUEBRANDO SOB OS PÉS DOS PERSONAGENS DOMINA A CENA. O AMBIENTE É SOMBRIO, COM A LUZ DA LUA FILTRANDO-SE POR ENTRE AS COPAS DAS ÁRVORES. A TENSÃO É PALPÁVEL.
+
+PETER
+(sussurrando, nervoso)
+Yumileth... onde está Jordan?
+
+YUMILETH NÃO RESPONDE IMEDIATAMENTE, MAS A RAIVA CONTIDA EM SEU OLHAR É VISÍVEL. ELA FINALMENTE RESPONDE SEM OLHAR PARA TRÁS.
+
+YUMILETH
+(com a voz firme, mas carregada de dor)
+Ele morreu.`,
+
+  // Page 3
+  `PETER PARA BREVEMENTE, SURPRESO E TRISTE COM A NOTÍCIA.
+
+PETER
+(baixo, com preocupação)
+Eu sinto muito, Yumileth. De verdade...
+
+YUMILETH
+(parando abruptamente e girando para encarar Peter, segurando sua arma com força)
+Não sinta. A dor é minha, não sua.
+
+PETER HESITA, MAS RESOLVE ARRISCAR, PERCEBENDO ALGO ENTRE ELA E JORDAN.
+
+PETER
+(tentando ser cuidadoso)
+Havia algo... algo especial entre vocês, não é?
+
+NUM IMPULSO, YUMILETH LEVANTA A ARMA E A PRESSIONA CONTRA A CABEÇA DE PETER, SEU OLHAR É FRIO E IMPLACÁVEL. O GRUPO TODO PARA, O SOM DA FLORESTA PARECE DIMINUIR.
+
+LYKA
+(preocupada, tentando intervir)
+Yumileth, não! Ele só está tentando...
+
+YUMILETH
+(interrompendo, com raiva contida)
+Cala a boca, Lyka! Todos vocês!
+
+O GRUPO FICA EM CHOQUE, OBSERVANDO COM OLHOS ARREGALADOS. A MÃO DE YUMILETH TREME LIGEIRAMENTE, MAS SUA DETERMINAÇÃO É CLARA.
+
+DE REPENTE, GALENA SURGE DAS SOMBRAS, SURPREENDENDO TODOS. COM UM MOVIMENTO RÁPIDO, ELA ABAIXA A ARMA DE YUMILETH, QUE, FURIOSA, SE AFASTA E COMEÇA A CAMINHAR SOZINHA EM DIREÇÃO À AERONAVE.
+
+GALENA
+(frustrada, mas controlada)
+Yumileth, vá para a aeronave. Agora.
+
+YUMILETH NÃO RESPONDE, APENAS SE AFASTA COM PASSOS PESADOS, DESAPARECENDO NA ESCURIDÃO. GALENA ENTÃO SE VIRA PARA PETER, SUA EXPRESSÃO ENDURECIDA.
+
+GALENA
+(com frieza, mas sem gritar)
+Peter, seria melhor você não abrir mais a boca. Não tenho paciência para sua ingenuidade.
+
+PETER, AINDA ABALADO, NÃO CONSEGUE ESCONDER A SURPRESA E DESCRENÇA EM RELAÇÃO ÀS ATITUDES DE GALENA. GALENA SE APROXIMA DELE, SEUS OLHOS FIXOS NOS DELE, COM UMA INTENSIDADE QUE FAZ PETER RECUAR.`,
+
+  // Page 4
+  `GALENA
+(se aproximando, voz carregada de irritação)
+Vocês acham que podem sair dos meus domínios sem prestar contas? Fugir como ratos?
+
+LYKA
+(enfrentando Galena, com firmeza)
+Tínhamos uma missão. Uma que poderia salvar vidas.
+
+GALENA RI, UMA RISADA SARCÁSTICA E DURA.
+
+GALENA
+(irônica, zombando)
+Missão? Vocês não fazem ideia do que estão enfrentando. Vocês estão correndo para a morte.
+
+PETER
+(erguendo a voz, se impondo)
+Nós conhecemos a verdadeira dimensão do inimigo agora. E sabemos o que está em jogo.
+
+GALENA PARA, SUA EXPRESSÃO SE TORNA MAIS SOMBRIA, QUASE PREDATÓRIA. ELA FIXA SEUS OLHOS EM PETER, COMO SE O ESTIVESSE AVALIANDO, PROCURANDO FRAQUEZAS.
+
+GALENA
+(ameaçadora, mas com um sorriso amargo)
+Você é muito parecido com Matias, Peter. Pacifista. E fraco. Mas eu admirava isso nele, assim como admiro em você. Só que agora... você perdeu minha confiança.
+
+A TENSÃO AUMENTA NOVAMENTE ENQUANTO O GRUPO SE PREPARA PARA CONTINUAR. GALENA DÁ UM ÚLTIMO OLHAR DESDENHOSO A PETER E LYKA, ANTES DE SE VIRAR E COMEÇAR A CAMINHAR.
+
+GALENA
+Vamos. Vocês voltarão ao Kappa comigo. E é melhor cooperarem.
+
+TODOS COMEÇAM A ANDAR NOVAMENTE, AGORA COM UM PESO MAIOR NOS OMBROS. A CÂMERA OS SEGUE, REVELANDO UM VISLUMBRE DA AERONAVE ESCONDIDA EM MEIO À FLORESTA, UM MONSTRO DE METAL ESPERANDO POR ELES.
+
+FADE OUT.
+
+CENA 03 – INT/EXT. AERONAVE – FLORESTA – DIA
+
+A AERONAVE ESTÁ ESTACIONADA ENTRE AS ÁRVORES, SUAS HÉLICES GIRANDO LENTAMENTE. YUMILETH ESTÁ DENTRO DA NAVE, OBSERVANDO ENQUANTO GALENA, PETER, LYKA, TOMMY, O.G., DIEGO, JEN, TREVOR, CIRO E BENDI SE APROXIMAM. YUMILETH SAI DA NAVE COM UM SEMBLANTE IMPASSÍVEL.`,
+
+  // Page 5
+  `GALENA
+(aproximando-se de YUMILETH, com autoridade)
+Está tudo pronto para a partida?
+
+YUMILETH
+(cabeça erguida, com firmeza)
+Sim, minha tia.
+
+GALENA
+Então acomode nossos prisioneiros.
+
+GALENA ENTRA NA NAVE ENQUANTO YUMILETH SE VOLTA PARA O GRUPO COM UM OLHAR FRIO.
+
+YUMILETH
+(gritando)
+Todos pra dentro!
+
+YUMILETH AGARRA LYKA COM FORÇA E A EMPURRA PARA DENTRO DA NAVE. LYKA GRITA, TENTANDO SE LIBERTAR, MAS YUMILETH NÃO DÁ TRÉGUA. PETER TENTA INTERVIR, MAS CIRO O SEGURA FIRMEMENTE.
+
+CIRO
+(firme)
+Calma aí, mocinha!
+
+PETER
+(gritando desesperado)
+Lykaaaa!
+
+YUMILETH DESCE DA NAVE SEM OLHAR PARA TRÁS. PETER, TOMMY, O.G., JEN E DIEGO ESTÃO NO MEIO DA ÁREA, ENQUANTO YUMILETH, CIRO, TREVOR E BENDI OS CERCAM. O AMBIENTE ESTÁ CARREGADO DE TENSÃO.
+
+PETER
+(encarando YUMILETH, com raiva)
+Onde você levou ela?
+
+YUMILETH
+(cínica)
+Calma, Peter! Nada de ruim vai acontecer com ela. Ela está segura lá dentro. Melhor do que aqui fora!
+
+TOMMY
+Para onde vão nos levar?
+
+YUMILETH
+Vocês eu não sei, mas a garota vai para um lugar de onde nunca deveria ter saído!
+
+PETER, TOMMY, JEN, DIEGO E O.G. TENTAM AVANÇAR, MAS CIRO, TREVOR, BENDI E YUMILETH SACAM SUAS ARMAS.
+
+YUMILETH
+(assentindo para os outros)
+Avancem! Quero ver a coragem de vocês!`,
+
+  // Page 6
+  `PETER
+Você é uma filha da puta!
+
+YUMILETH
+Cuide das suas palavras quando falar da minha mãe, seu verme!
+
+PETER, EM UM IMPULSO DE RAIVA, COSPE NO ROSTO DE YUMILETH.
+
+PETER
+Espero que você morra!
+
+YUMILETH
+(limpando o rosto, com um sorriso frio)
+Eu não vou morrer, meu querido Peter. Mas vocês... sinto muito.
+
+YUMILETH OLHA PARA CIRO, TREVOR E BENDI.
+
+YUMILETH
+Façam o que quiserem com eles. Estão nas mãos de vocês!
+
+YUMILETH ENTRA NA NAVE E A PORTA DO COMPARTIMENTO DE CARGAS COMEÇA A SE FECHAR LENTAMENTE. CORAN APARECE COM VÁRIOS SOLDADOS.
+
+CORAN
+(gritando, correndo em direção ao grupo)
+Precisam de ajuda, meus amigos?!
+
+GALENA, DENTRO DA NAVE, OLHA PELA JANELA ENQUANTO A PORTA DO COMPARTIMENTO SE FECHA RAPIDAMENTE.
+
+PETER, TOMMY, DIEGO, JEN E O.G. AVANÇAM CONTRA CIRO, BENDI E TREVOR.
+
+TOMMY SE JOGA EM CIMA DE CIRO, DERRUBANDO-O NO CHÃO.
+
+TOMMY
+Empurra agora, seu cretino!
+
+CIRO, AMEDRONTADO, TENTA SE LEVANTAR. BENDI E TREVOR, PERCEBENDO A SITUAÇÃO, LARGAM AS ARMAS E CORREM EM DIREÇÃO À NAVE.
+
+TREVOR
+(gritando desesperado)
+Esperem!
+
+BENDI
+Não podem nos deixar!
+
+A AERONAVE COMEÇA A DECOLAR. CORAN E OS SOLDADOS CERCAM BENDI, TREVOR E CIRO, APONTANDO OS FUZIS PARA ELES.
+
+ENQUANTO A NAVE SE AFASTA, PETER, TOMMY, DIEGO, JEN E O.G. OBSERVAM COM FRUSTRAÇÃO E DESESPERO.`,
+
+  // Page 7
+  `CORAN
+(para os soldados, com firmeza)
+Não deixem nenhum deles escapar!
+
+A AERONAVE DESAPARECE NO CÉU, DEIXANDO BENDI, TREVOR E CIRO PARA TRÁS, CERCADOS E DESARMADOS.
+
+PETER
+(desesperado, olhando para o céu)
+Lyka...
+
+FADE OUT.
+
+CENA 4. INT. AERONAVE - CABINE E COMPARTIMENTO DE CARGAS - DIA.
+
+GALENA ESTÁ NA CABINE DE COMANDO DA AERONAVE, CONTROLANDO-A ENQUANTO YUMILETH ESTÁ AO LADO, OBSERVANDO A PAISAGEM LÁ FORA.
+
+GALENA
+(olhando para Yumileth)
+Preciso resolver algo no compartimento de cargas. Assuma o controle.
+
+YUMILETH
+(com uma expressão séria)
+Claro, minha tia. Pode deixar comigo.
+
+GALENA LEVANTA-SE E DEIXA O COMANDO PARA YUMILETH, QUE TOMA O ASSENTO E ASSUME A DIREÇÃO DA AERONAVE.
+
+CORTE PARA O COMPARTIMENTO DE CARGAS
+
+LYKA ESTÁ AMARRADA A UMA CADEIRA, OS BRAÇOS FIRMEMENTE PRESOS, MAS SUA EXPRESSÃO É DE PURA RAIVA. ELA ESCUTA PASSOS E LEVANTA A CABEÇA AO VER GALENA ENTRANDO NO COMPARTIMENTO.
+
+LYKA
+(com desprezo)
+Traidora.
+
+GALENA
+(mantendo a calma)
+Vamos, Lyka. Vamos manter a calma.
+
+GALENA SE APROXIMA LENTAMENTE, MAS LYKA A ENCARA COM ÓDIO.
+
+LYKA
+(feroz)
+Como você ousa? Vou te matar, Galena, com minhas próprias mãos!`,
+
+  // Page 8
+  `GALENA
+(sorrindo ironicamente)
+Você não está em posição de ameaçar ninguém, Lyka.
+
+LYKA TENTA SE AFASTAR, MAS ESTÁ PRESA DEMAIS PARA SE MOVER. GALENA CHEGA MAIS PERTO E PASSA A MÃO SUAVEMENTE PELO CABELO DE LYKA, QUE SE CONTORCE, TENTANDO SE ESQUIVAR.
+
+LYKA
+(vomitando palavras)
+O que você quer comigo? Me solta agora!
+
+GALENA
+(sussurrando, com um tom de superioridade)
+Você tem algo que eu preciso. Um passaporte... para o Paraíso.
+
+GALENA PUXA A MANGA DE SUA CAMISA, REVELANDO UMA CICATRIZ PROFUNDA EM SEU BRAÇO, ONDE UM CHIP HAVIA SIDO REMOVIDO.
+
+GALENA
+(com desprezo na voz)
+Satir fez isso comigo. Ele me baniu do Paraíso. Acha que pode me controlar, mas eu vou provar que está errado. Vou conseguir o que quero, e ele vai pagar por isso.
+
+LYKA
+(querendo entender)
+Onde você está me levando?
+
+GALENA
+(rindo, se afastando)
+Para o lugar de onde você nunca deveria ter saído.
+
+GALENA COMEÇA A ANDAR AO REDOR DE LYKA, COMO UM PREDADOR CIRCULANDO SUA PRESA.
+
+GALENA
+(com ironia)
+Eu fiz de tudo para conseguir minha recompensa. Quando Matias apareceu na minha vida, pensei que estava finalmente perto de conseguir. Foi fácil fazer ele acreditar em mim, acreditar que eu queria liberdade tanto quanto ele. Mas ele preferiu ficar com a família dele.
+
+LYKA
+(desafiadora)
+Você matou Matias?
+
+GALENA
+(com desprezo)`,
+
+  // Page 9
+  `Eu não sujo minhas mãos, Lyka. Ele acreditou em mim, e foi só isso que precisei. Quando ele me contou sobre você, meus olhos brilharam. Vi em você a chave para o meu retorno ao Paraíso. Não sabia como te capturar, mas encontrei um jeito... entreguei seu pai adotivo, o Matias, para o meu primo, o seu pai biológico, Satir.
+
+YUMILETH, QUE HAVIA VOLTADO DISCRETAMENTE PARA A CABINE PARA RESOLVER ALGO COM OS CONTROLES, ACABA OUVINDO TUDO DE ONDE ESTÁ ESCONDIDA, SEM SER VISTA POR GALENA E LYKA. SUA EXPRESSÃO É DE CHOQUE, INCRÉDULA COM AS REVELAÇÕES.
+
+GALENA
+(gargalhando)
+Agora é o meu momento, Lyka. Vou usufruir do Paraíso... sozinha.
+
+YUMILETH, CHOCADA E INCRÉDULA, RECUA SEM SER NOTADA E VOLTA PARA A DIREÇÃO DA AERONAVE, TENTANDO PROCESSAR O QUE ACABOU DE OUVIR.
+
+CORTE PARA A CABINE
+
+YUMILETH RETOMA O CONTROLE DA AERONAVE, SEUS OLHOS FIXOS NO HORIZONTE, MAS SUA MENTE CLARAMENTE PERTURBADA PELO QUE OUVIU.
+
+FADE OUT
+
+CENA 5. EXT. FLORESTA – DIA
+
+A CÂMERA SE MOVE LENTAMENTE ATRAVÉS DA DENSA VEGETAÇÃO DA FLORESTA. O SOM AMBIENTE É SINISTRO, APENAS O VENTO SOPRANDO E AS FOLHAS FARFALHANDO AO REDOR. A LUZ DO DIA É FILTRADA PELAS COPAS DAS ÁRVORES, CRIANDO SOMBRAS INQUIETANTES QUE DANÇAM NO CHÃO.
+
+CORTE PARA UM PLANO DETALHE
+
+UM PÉ DESCALÇO APARECE PARCIALMENTE ENTERRADO NA TERRA ÚMIDA, COM SANGUE SECO ENRIJECENDO AO REDOR.
+
+CORTE PARA UM PLANO MÉDIO
+
+CIRO ESTÁ CAÍDO DE BRUÇOS, O CORPO RÍGIDO E TORCIDO EM UMA POSIÇÃO ANTINATURAL. SEUS OLHOS ABERTOS ESTÃO VIDRADOS, A EXPRESSÃO CONGELADA EM UM MISTO DE DOR E PAVOR. O PEITO ESTÁ PERFURADO POR VÁRIOS TIROS, COM O SANGUE ESCURO FORMANDO UMA POÇA AO REDOR DE SEU CORPO. INSETOS COMEÇAM A SE AGLOMERAR SOBRE ELE, UM SINAL CLARO DE QUE ESTÁ MORTO HÁ HORAS.
+
+CORTE PARA UM PLANO PRÓXIMO`,
+
+  // Page 10
+  `BENDI ESTÁ ENCOSTADO EM UMA ÁRVORE, A CABEÇA CAÍDA PARA TRÁS, A BOCA ENTREABERTA E OS OLHOS SEM VIDA MIRANDO O CÉU. SUAS MÃOS ESTÃO AMARRADAS COM CORDAS IMPROVISADAS, E SEU CORPO ESTÁ CHEIO DE HEMATOMAS E CORTES, SUGERINDO QUE FOI BRUTALMENTE ESPANCADO ANTES DE SER DEIXADO ALI PARA MORRER. UMA MOSCA POUSA EM SEU LÁBIO INFERIOR, ENQUANTO UM CORVO EM UMA ÁRVORE PRÓXIMA SOLTA UM GRITO AGOURENTO.
+
+CORTE PARA UM PLANO GERAL
+
+TREVOR ESTÁ PENDURADO PELO PESCOÇO EM UMA ÁRVORE, BALANÇANDO SUAVEMENTE COM O VENTO. A CORDA ESTÁ AMARRADA FIRMEMENTE A UM GALHO ALTO, E SEUS PÉS MAL TOCAM O CHÃO. SEUS DEDOS ESTÃO CURVADOS EM AGONIA, E A PELE DE SEU ROSTO ESTÁ PÁLIDA, DESTACANDO AS MANCHAS ARROXEADAS DA ASFIXIA. AO LADO DE SEU CORPO, A TERRA ESTÁ ARRANHADA, COMO SE ELE TIVESSE TENTADO DESESPERADAMENTE SE LIBERTAR.
+
+PANORÂMICA
+
+A CÂMERA FAZ UMA PANORÂMICA LENTA, REVELANDO OS TRÊS CORPOS, DISPOSTOS DE FORMA QUASE RITUALÍSTICA, CRIANDO UMA CENA GROTESCA. O SILÊNCIO DA FLORESTA É INTERROMPIDO APENAS PELOS SONS DISTANTES DA NATUREZA E O OCASIONAL RUÍDO DAS FOLHAS SOB OS PÉS DE ALGUM ANIMAL.
+
+CORTE PARA UM PLANO DETALHE
+
+UMA INSCRIÇÃO EM SANGUE ESTÁ MARCADA NO TRONCO DA ÁRVORE ONDE TREVOR ESTÁ PENDURADO. AS PALAVRAS, EMBORA BORRADAS, SÃO LEGÍVEIS: “TRAIDORES NÃO ESCAPAM.”
+
+FADE OUT
+
+CENA 6. EXT. OUTRA PARTE DA FLORESTA – DIA
+
+A CÂMERA COMEÇA COM UM PLANO AÉREO QUE SE MOVE RAPIDAMENTE SOBRE A COPA DAS ÁRVORES, REVELANDO A VASTIDÃO DA FLORESTA. O SILÊNCIO PESADO DA CENA ANTERIOR É SUBSTITUÍDO PELO SOM CRESCENTE DE MOTORES E O BARULHO RÍTMICO DE RODAS ESMAGANDO A VEGETAÇÃO. A FLORESTA, QUE ANTES PARECIA IMPENETRÁVEL, AGORA ECOA COM A PRESENÇA DE UMA FORÇA MILITAR EM MOVIMENTO.
+
+CORTE RÁPIDO
+
+VÁRIOS JEEPS AVANÇAM PELA TRILHA ESTREITA DA FLORESTA, LEVANTANDO POEIRA E FOLHAS SECAS AO PASSAREM. DENTRO DELES, REBELDES ARMADOS, COM EXPRESSÕES DETERMINADAS, SEGURAM FIRMEMENTE SUAS ARMAS, PRONTOS PARA O COMBATE. OS VEÍCULOS SE MOVEM EM FORMAÇÃO, O BARULHO DOS MOTORES ECOANDO ENTRE AS ÁRVORES ALTAS.
+
+CORTE PARA UM PLANO PRÓXIMO`,
+
+  // Page 11
+  `UM REBELDE NO BANCO TRASEIRO DE UM DOS JEEPS AJUSTA A BANDOLEIRA DE SUA ARMA, SEUS OLHOS ATENTOS VARREM A DENSA VEGETAÇÃO AO REDOR.
+
+CORTE FINAL:
+
+O COMBOIO CONTINUA A AVANÇAR, DESAPARECENDO NA FLORESTA, COM O SOM DOS MOTORES SE DISTANCIANDO RAPIDAMENTE.
+
+FADE OUT.
+
+CENA 7. INT. JEEP – FLORESTA – DIA
+
+CORAN ESTÁ AO VOLANTE, COM O ROSTO SÉRIO E CONCENTRADO. PETER ESTÁ NO BANCO DO PASSAGEIRO, OLHANDO FIXAMENTE PARA A ESTRADA À FRENTE. TOMMY, OG, MAKAR, E JEN ESTÃO APERTADOS NO BANCO TRASEIRO, O CLIMA É TENSO.
+
+TOMMY
+(inquieto, olhando ao redor)
+Onde diabos a gente tá indo?
+
+CORAN
+(sem desviar os olhos da estrada)
+Vamos buscar a sua garota, Peter.
+
+PETER
+(fixando o olhar em Coran)
+E depois?
+
+MAKAR
+(com a voz sombria)
+É, e depois?
+
+CORAN
+(com frieza, apertando o volante)
+Depois... eu vou matar qualquer filho da puta que se meter no caminho da revolução.
+
+TOMMY E OG TROCAM OLHARES DE DETERMINAÇÃO, MAKAR E JEN RESPIRAM FUNDO, ABSORVENDO A GRAVIDADE DA MISSÃO.
+
+O JEEP CONTINUA AVANÇANDO PELA TRILHA, O SOM DO MOTOR REVERBERANDO NA DENSA FLORESTA.
+
+FADE OUT.
+
+CENA 8. INT. SALA DE JANTAR – PALÁCIO DO GOVERNO – NOITE
+
+SATIR ESTÁ SENTADO EM UMA CADEIRA DE MADEIRA MACIÇA, CERCADO POR UMA MESA GRANDIOSA CHEIA DE PRATOS FINOS, PORÉM ELE COME SOZINHO. SEU OLHAR ESTÁ DISTANTE. ELE BATE`,
+
+  // Page 12
+  `OS DEDOS RITMADAMENTE NO BRAÇO DA CADEIRA, O SOM ECOA NO SILÊNCIO DA SALA.
+
+A GRANDE PORTA DUPLA DA SALA SE ABRE, E BERGON ENTRA RAPIDAMENTE, COM PASSOS FIRMES.
+
+SATIR
+(irritado, sem desviar os olhos do prato)
+Você interrompeu meu jantar, Bergon.
+
+BERGON
+(com tom grave)
+Ele quer falar com você... agora.
+
+SATIR
+(ainda mais impaciente, limpando a boca com um guardanapo de seda)
+E isso não pode esperar?
+
+BERGON
+(enfático)
+Não. Não pode.
+
+SATIR SUSPIRA FUNDO, VISIVELMENTE INCOMODADO, MAS SEM QUESTIONAR MAIS, ELE SE LEVANTA APRESSADAMENTE DA MESA, AJEITA O CASACO E SAI DA SALA SEM OLHAR PARA TRÁS.
+
+A CÂMERA SEGUE BERGON E SATIR SAINDO.
+
+FADE OUT.
+
+CENA 9. INT. SALA DE SATIR – NOITE
+
+A PORTA SE ABRE COM UM RANGIDO, REVELANDO SATIR, QUE ENTRA NA SALA, SEGUIDO DE BERGON. A ILUMINAÇÃO É SUAVE, CRIANDO UM AMBIENTE TENSO. NO CENTRO DA SALA, UMA MESA IMPONENTE EXIBE UMA IMAGEM HOLOGRÁFICA DE UM HOMEM IMPECAVELMENTE TRAJADO, DE COSTAS PARA A ENTRADA. SATIR FECHA A PORTA, SUA RESPIRAÇÃO PESADA.
+
+SATIR
+(tentando disfarçar o nervosismo)
+Bergon, saia. Esta conversa não é para você.
+
+BERGON OLHA PARA SATIR, HESITA, MAS ACATA A ORDEM, SAINDO RAPIDAMENTE. A PORTA SE FECHA COM UM ESTALO, DEIXANDO SATIR A SÓS COM A FIGURA HOLOGRÁFICA.
+
+SATIR
+(tentando parecer calmo, mas a voz treme)
+Senhor, é uma honra ser chamado por você.`,
+
+  // Page 13
+  `MOJAVE
+(sem se virar, a voz grave cortando o ar)
+Honra? Você me fez esperar, Satir.
+
+SATIR
+(apressado, quase tropeçando nas palavras)
+Mil desculpas, senhor... houve imprevistos…
+
+MOJAVE
+(frio, implacável)
+Imprevistos... sempre as mesmas desculpas. Você já se mostrou um incompetente antes, Satir. Suas primas provaram ser mais capazes.
+
+SATIR
+(defensivo, tentando manter o controle)
+Senhor, eu estou fazendo tudo o que é necessário! O plano está em andamento…
+
+MOJAVE
+(interrompendo, voz carregada de desprezo)
+Em andamento? O que vejo são falhas e mais falhas! Quando será a grande colheita, Satir? Ou será que você não é capaz nem de responder isso?
+
+SATIR
+(engolindo em seco, a tensão aumentando)
+A colheita... Eu... Surgiram complicações, mas começará em breve, eu garanto!
+
+MOJAVE
+(irritado, sua voz elevando-se em fúria)
+Complicações? Sempre há complicações com você! Não suporto mais suas desculpas! Eu deveria ter confiado nas suas primas, elas, sim, são dignas de respeito!
+
+SATIR
+(tentando desesperadamente se justificar)
+Eu cumpro com o que me é pedido! Sempre cumpri, Mojave! Só preciso de mais um pouco de tempo…
+
+MOJAVE
+(cortando-o com frieza)
+Tempo? O que você merece, Satir, é ser descartado! Você não me serve mais.
+
+SATIR
+(desesperado, sua voz tremendo)
+Por favor, senhor... Você prometeu o paraíso para mim... Eu fiz tudo por você! Não me abandone agora!`,
+
+  // Page 14
+  `MOJAVE
+(com desprezo, quase sussurrando)
+O paraíso? O paraíso é para os dignos, Satir. Eu sei sobre sua filha... Ela, sim, tem potencial. A cada dia, você se torna uma decepção maior.
+
+SATIR
+(tentando manter a compostura, mas claramente abalado)
+Senhor, eu... Pai, por favor…
+
+MOJAVE
+(com ira, cortando-o de novo)
+Não me chame de pai! Você não merece me chamar de pai, não enquanto continua a falhar comigo. Você sempre se mostrou indigno!
+
+SATIR
+(desafiador, mas com voz trêmula)
+Tenho o chip... Isso me garante o direito ao paraíso! Você não pode me tirar isso!
+
+MOJAVE
+(frio, com uma ameaça velada)
+O chip? Veremos se isso realmente lhe garante um lugar no meu reino. Mas saiba, Satir... Tenho desejo de conhecer minha neta. Ela tem a força que você nunca teve. Ela, sim, pode ser uma governante à altura.
+
+SATIR
+(a fúria crescendo, quase perdendo o controle)
+Você não pode fazer isso! Eu sou o herdeiro legítimo! Você prometeu!
+
+MOJAVE
+(com uma calma aterrorizante)
+Eu prometo a quem merece, Satir. E você... não é nada além de uma criança mimada que falhou em todas as suas tarefas. A conversa entre nós terminou. Minha decisão está tomada.
+
+A IMAGEM HOLOGRÁFICA SE DISSIPA, DEIXANDO SATIR EM UM SILÊNCIO DEVASTADOR. SATIR FICA IMÓVEL POR UM INSTANTE, SUA EXPRESSÃO LENTAMENTE SE TRANSFORMANDO DE INCREDULIDADE EM FÚRIA.
+
+SATIR
+(explodindo em raiva)
+Maldito! MALDITO!
+
+ELE COMEÇA A QUEBRAR TUDO AO SEU REDOR, ATIRANDO OBJETOS CONTRA AS PAREDES, DESTRUINDO O QUE ESTIVER AO SEU`,
+
+  // Page 15
+  `ALCANCE. O SOM DE SUA FÚRIA ECOA PELA SALA ATÉ QUE, QUASE SEM FÔLEGO, ELE GRITA POR BERGON.
+
+SATIR
+(com os olhos fervendo de ódio)
+BERGON! Entre aqui, AGORA!
+
+BERGON ENTRA APRESSADO, QUASE TROPEÇANDO NA PRESSA.
+
+SATIR
+(descontrolado, quase em transe)
+Mate todos... MATE TODOS! Não quero um único cidadão de Pandorum vivo! Quero Pandorum em chamas, ardendo como o inferno!
+
+FADE OUT.
+
+CENA 10. PANORÂMICA DE PANDORUM – NOITE
+
+A CENA ABRE COM UMA VISÃO PANORÂMICA DE PANDORUM À NOITE. SOMBRAS SINISTRAS COBREM OS SETORES: CENTRO, SETOR ALFA, SETOR BETA, SETOR IOTA. O CAOS É VISÍVEL MESMO DE LONGE. LUZES DE NEON PISCAM FRENETICAMENTE, ENQUANTO SOLDADOS MARCHAM PELAS RUAS, ARMADOS E DETERMINADOS.
+
+CORTA PARA
+
+SETOR ALFA
+
+SOLDADOS INVADEM CASAS, ARRANCANDO PESSOAS DE SUAS RESIDÊNCIAS COM BRUTALIDADE. GRITOS DE DESESPERO E PÂNICO SE MISTURAM AO SOM DE MÓVEIS SENDO DESTRUÍDOS.
+
+MÃES GRITAM DESESPERADAS, TENTANDO PROTEGER SEUS FILHOS ENQUANTO CRIANÇAS SÃO ARREMESSADAS AO LONGE. ALGUMAS MÃES SÃO ARRANCADAS DOS BRAÇOS DOS FILHOS, E CRIANÇAS SÃO PISOTEADAS NO CHÃO.
+
+HOMENS E MULHERES SÃO ARRASTADOS E ENFILEIRADOS NAS RUAS, GOLPEADOS PELOS SOLDADOS. IDOSOS SÃO TORTURADOS SEM PIEDADE. CORPOS SE ACUMULAM NAS RUAS ENQUANTO GRITOS DE AGONIA ECOAM.
+
+SETOR BETA
+
+EM OUTRO SETOR, SOLDADOS ENTRAM NAS CASAS, ARRANCANDO PESSOAS DE SUAS CAMAS. GRITOS DE PÂNICO SÃO OUVIDOS. FAMILIARES SÃO SEPARADOS, E SOMBRAS CORREM FRENETICAMENTE PELOS CORREDORES.
+
+CRIANÇAS SÃO SEPARADAS DOS PAIS E JOVENS SÃO ESPANCADOS. MÃES E PAIS TENTAM LUTAR, MAS SÃO SUBJUGADOS COM VIOLÊNCIA.`,
+
+  // Page 16
+  `SETOR IOTA
+
+O CAOS SE ESPALHA PELO SETOR IOTA, ONDE SOLDADOS ATACAM COM UMA BRUTALIDADE INIMAGINÁVEL. CASAS SÃO INVADIDAS E PESSOAS SÃO ARRASTADAS PARA FORA.
+
+VELHOS E ENFERMOS SÃO ESPANCADOS, ENQUANTO SOLDADOS GRITAM ORDENS E DISPARAM SUAS ARMAS. CORPOS CAEM AO CHÃO, E O SOM DE TIROS É CONSTANTE.
+
+PRAÇA DO SETOR CENTRO
+
+A PRAÇA CENTRAL ESTÁ TOMADA PELO CAOS. SOLDADOS ARMADOS AVANÇAM COM BRUTALIDADE, INVADINDO CASAS E ARRANCANDO PESSOAS DE SUAS RESIDÊNCIAS. O SOM DE VIDROS QUEBRANDO E MÓVEIS SENDO ARRASTADOS É CONSTANTE.
+
+GRITOS E LAMENTOS SÃO OUVIDOS POR TODA PARTE. CRIANÇAS SÃO ARREMESSADAS AO LONGE, ARRANCADAS DOS BRAÇOS DAS MÃES E PISOTEADAS PELOS SOLDADOS.
+
+PESSOAS SÃO FORÇADAS A SE ENFILEIRAR NAS RUAS. HOMENS E MULHERES SÃO GOLPEADOS SEM PIEDADE. IDOSOS SÃO TORTURADOS COM UMA BRUTALIDADE INIMAGINÁVEL.
+
+EM UM CANTO DA PRAÇA, BERGON, COM UMA EXPRESSÃO SEVERA E DOMINADORA, ESTÁ CERCADO POR SOLDADOS. ELE GRITA ORDENS ENQUANTO OBSERVA O CAOS AO SEU REDOR.
+
+BERGON
+(gritando)
+Vocês sabem o que deve ser feito! Não deixem nenhum sobrevivente!
+
+OS SOLDADOS CONTINUAM COM A OPERAÇÃO, ENQUANTO O CAOS SE INTENSIFICA AO REDOR. TIROS SÃO DISPARADOS INCESSANTEMENTE, ECOANDO PELA CIDADE.
+
+FADE OUT.
+
+OS GRITOS DAS PESSOAS SE TORNAM ECOS DISTANTES, ENQUANTO O TIROTEIO PERSISTE, CRIANDO UM AMBIENTE OPRESSIVO E DESESPERADOR.
+
+FIM DO EPISÓDIO 7`
+];

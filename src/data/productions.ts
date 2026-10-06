@@ -3,6 +3,7 @@ import { RASGA_MORTALHA_2_EPISODES } from './rasgaMortalha2Data';
 import { COLD_CASE_BRASIL_EPISODES } from './coldCaseData';
 import { EPISODES_451 } from './451Data';
 import { MEDUSA_A_MALDICAO_DE_ATENA_EPISODES } from './medusaData';
+import { PANDORUM_2_EPISODES } from './pandorum2Data';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -199,7 +200,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_96c8315bda964573a3447f8949da9b69~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_96c8315bda964573a3447f8949da9b69~mv2.png',
     synopsis: 'A segunda temporada de PANDORUM mergulha ainda mais fundo na luta entre opressão e liberdade. Após os eventos devastadores da primeira temporada, Peter, Lyka, Tommy, Jen, OG e Makar enfrentam novas alianças, traições e segredos sombrios no coração do Paraíso. Enquanto a resistência se fortalece nos Setores devastados, Satir intensifica seu controle com planos cruéis e visões distorcidas de um novo mundo. Entre fugas eletrizantes, reviravoltas emocionantes e sacrifícios dolorosos, a temporada culmina em uma traição inesperada.',
-    episodes: generateUnits(7, 'episódios')
+    episodes: PANDORUM_2_EPISODES
   },
   {
     id: 'as-mina-parte-2',
@@ -466,6 +467,9 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
 export function getProductionBySlug(slug: string): WebProduction | undefined {
   if (slug === 'a-maldicao-de-atena') {
     return PRODUCTIONS_DATA.find((p) => p.slug === 'medusa-a-maldicao-de-atena');
+  }
+  if (slug === 'pandorum2') {
+    return PRODUCTIONS_DATA.find((p) => p.slug === 'pandorum-2');
   }
   return PRODUCTIONS_DATA.find((p) => p.slug === slug);
 }
