@@ -14,7 +14,8 @@ import {
   Film,
   Send,
   Eye,
-  Info
+  Info,
+  BookOpen
 } from 'lucide-react';
 import {
   getCommunityStoryBySlug,
@@ -217,14 +218,14 @@ export function CommunityStoryDetailPage({
                 </div>
               </div>
 
-              {/* Primary Action Button: Começar a Assistir */}
+              {/* Primary Action Button: Leia agora */}
               <div className="pt-4 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => handleWatchEpisode(1)}
                   className="px-8 py-4 rounded-xl bg-gradient-to-r from-[#512f2e] via-[#512f2e] to-[#efae54] hover:brightness-110 text-white font-black text-sm uppercase tracking-wider transition shadow-xl shadow-[#512f2e]/60 border border-[#efae54] flex items-center gap-2.5 cursor-pointer transform hover:scale-102"
                 >
-                  <Play className="w-5 h-5 fill-[#efae54] text-[#efae54]" />
-                  <span>Começar a assistir</span>
+                  <BookOpen className="w-5 h-5 text-[#efae54]" />
+                  <span>Leia agora</span>
                 </button>
 
                 <button
@@ -342,8 +343,8 @@ export function CommunityStoryDetailPage({
                       }}
                       className="px-3.5 py-1.5 rounded-lg bg-[#512f2e] hover:bg-[#efae54] hover:text-black text-[#efae54] text-xs font-bold uppercase tracking-wider transition border border-[#efae54]/40 flex items-center gap-1.5"
                     >
-                      <Play className="w-3 h-3 fill-current" />
-                      <span>Assistir</span>
+                      <BookOpen className="w-3 h-3" />
+                      <span>Ler</span>
                     </button>
                   </div>
                 </div>

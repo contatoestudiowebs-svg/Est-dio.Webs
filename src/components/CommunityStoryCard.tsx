@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Sparkles, Clock, Film } from 'lucide-react';
+import { BookOpen, Sparkles, Clock, Film } from 'lucide-react';
 import { CommunityStory } from '../data/communityData';
 
 interface CommunityStoryCardProps {
@@ -47,8 +47,9 @@ export function CommunityStoryCard({ story, onSelectStory }: CommunityStoryCardP
 
         {/* Hover play reveal */}
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <div className="w-12 h-12 rounded-full bg-[#512f2e] text-[#efae54] border border-[#efae54] shadow-xl flex items-center justify-center transform scale-75 group-hover:scale-100 transition-transform duration-300">
-            <Play className="w-5 h-5 fill-current ml-0.5" />
+          <div className="px-4 py-2 rounded-xl bg-[#512f2e] text-[#efae54] border border-[#efae54] shadow-xl flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider transform scale-90 group-hover:scale-100 transition-transform duration-300">
+            <BookOpen className="w-4 h-4 text-[#efae54]" />
+            <span>Leia agora</span>
           </div>
         </div>
       </div>
@@ -78,8 +79,9 @@ export function CommunityStoryCard({ story, onSelectStory }: CommunityStoryCardP
           <span className="truncate max-w-[140px] text-slate-400">
             por <strong className="text-slate-300 font-semibold">{story.creator.name}</strong>
           </span>
-          <span className="text-[#efae54] font-bold text-[10px] uppercase group-hover:underline">
-            Ver &rarr;
+          <span className="text-[#efae54] font-bold text-[10px] uppercase group-hover:underline flex items-center gap-1">
+            <span>Leia agora</span>
+            <span>&rarr;</span>
           </span>
         </div>
       </div>

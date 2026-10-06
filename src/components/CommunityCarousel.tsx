@@ -7,7 +7,8 @@ import {
   Film,
   Layers,
   Clock,
-  ArrowRight
+  ArrowRight,
+  BookOpen
 } from 'lucide-react';
 import { CommunityStory } from '../data/communityData';
 
@@ -220,8 +221,8 @@ export function CommunityCarousel({
                       }}
                       className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#512f2e] via-[#512f2e] to-[#efae54] hover:brightness-110 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition shadow-lg shadow-[#512f2e]/40 border border-[#efae54]/50 cursor-pointer"
                     >
-                      <Play className="w-3.5 h-3.5 fill-current text-[#efae54]" />
-                      <span>Ver história</span>
+                      <BookOpen className="w-3.5 h-3.5 text-[#efae54]" />
+                      <span>Leia agora</span>
                     </button>
                   </div>
                 </div>

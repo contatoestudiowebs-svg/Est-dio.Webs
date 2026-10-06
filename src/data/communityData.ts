@@ -279,6 +279,87 @@ export const COMMUNITY_STORIES: CommunityStory[] = [
           'A espada repousa no chão de pedra. Eamon segura a mão de Isolde enquanto a luz dourada dissolve as sombras eternas de Naria.'
       }
     ]
+  },
+  {
+    id: 'eu-sou-piaf',
+    title: 'Eu Sou Piaf',
+    slug: 'eu-sou-piaf',
+    tagline: 'Entre pratos sujos e o brilho dos palcos, a voz que desafiou o preconceito.',
+    synopsis:
+      'Marcelo é um jovem sonhador. Cresceu vendo sua mãe ouvir Edith Piaf e acabou se tornando um grande fã da cantora. E hoje ele divide seu tempo entre trabalho, como lavador de pratos, e pequenas apresentações nas noites, onde interpreta as músicas de Edith Piaf. Seus pais descobrem o que ele faz nas noites e expulsam Marcelo de casa. Marcelo vê uma oportunidade de mudar de vida e viver seu sonho quando abrem inscrições para uma seleção de talentos para um grande teatro da cidade. Marcelo é inscrito por sua amiga. No dia de sua apresentação, Marcelo dá um show como Edith Piaf, todos se encantam com a incrível apresentação.',
+    status: 'Estreia em breve',
+    creator: {
+      name: 'Fred Reids',
+      handle: '@fredreids',
+      avatar:
+        'https://static.wixstatic.com/media/cbfc82_82f27329310c403c8e6c29e4d3285e23~mv2.png/v1/fill/w_150,h_150,al_c,q_85,enc_avif,quality_auto/cbfc82_82f27329310c403c8e6c29e4d3285e23~mv2.png',
+      bio: 'Autor, dramaturgo e criador de histórias intensas que exploram a arte, superação e as emoções humanas.'
+    },
+    category: 'Drama',
+    totalEpisodes: 4,
+    durationTotal: '45 min',
+    releaseDate: 'Estreia em Breve',
+    year: '2026',
+    badge: '04 episódios',
+    coverVertical:
+      'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+    backdropUrl:
+      'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+    isFeatured: true,
+    isPopular: true,
+    isNew: true,
+    isShort: true,
+    tags: ['Drama', 'Música', 'Superação', 'Edith Piaf', 'Teatro'],
+    episodes: [
+      {
+        number: 1,
+        title: 'A Voz na Madrugada',
+        slug: 'episodio-01',
+        duration: '11 min',
+        summary:
+          'Marcelo enfrenta a rotina exaustiva na cozinha do restaurante, guardando para as noites secretas a paixão de cantar as canções de Edith Piaf.',
+        thumbnail:
+          'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+        scenePreview:
+          'Sob a luz fraca de um pequeno bar, Marcelo coloca o vestido preto e fecha os olhos. As primeiras notas de "La Vie en Rose" silenciam todo o ambiente.'
+      },
+      {
+        number: 2,
+        title: 'Portas Fechadas',
+        slug: 'episodio-02',
+        duration: '11 min',
+        summary:
+          'O segredo de Marcelo é descoberto por seus pais. Rejeitado e expulso de casa sem nada além de seus discos e sonhos, ele encontra abrigo na amizade.',
+        thumbnail:
+          'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+        scenePreview:
+          'A porta bate com força na noite chuvosa. Marcelo senta na calçada com sua mala humilde e aperta o vinil de Edith Piaf contra o peito.'
+      },
+      {
+        number: 3,
+        title: 'A Inscrição Inesperada',
+        slug: 'episodio-03',
+        duration: '12 min',
+        summary:
+          'A seleção de novos talentos para o Teatro Municipal abre inscrições. Sem que Marcelo saiba, sua melhor amiga envia seu nome para os jurados.',
+        thumbnail:
+          'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+        scenePreview:
+          'A amiga entrega o envelope dourado da confirmação: "Eles precisam ouvir você, Marcelo. O mundo inteiro precisa saber quem você é."'
+      },
+      {
+        number: 4,
+        title: 'Sob os Holofotes',
+        slug: 'episodio-04',
+        duration: '11 min',
+        summary:
+          'Diante do teatro lotado e dos jurados mais rigorosos, Marcelo sobe ao palco. Sua interpretação arrebatadora como Edith Piaf conquista aplausos de pé e consagra seu talento.',
+        thumbnail:
+          'https://static.wixstatic.com/media/cbfc82_7ce7c95583a142f78b63ea23b26e9051~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cat%C3%A1logo-comunidade-est%C3%BAdio-Eu-Sou-Piaf.png',
+        scenePreview:
+          'O refletor ilumina Marcelo cantando "Non, je ne regrette rien". A plateia se levanta em lágrimas com uma ovação histórica no grande teatro.'
+      }
+    ]
   }
 ];
 
