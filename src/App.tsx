@@ -158,6 +158,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcuts for /a-santa-do-pau-oco and /santa-do-pau-oco
+    if (pathOnly === '/a-santa-do-pau-oco' || pathOnly === '/santa-do-pau-oco') {
+      return <ProductionDetailPage slug="a-santa-do-pau-oco" onNavigate={navigate} />;
+    }
+    const santaChapterMatch = pathOnly.match(/^\/(?:a-santa-do-pau-oco|santa-do-pau-oco)\/([^/]+)$/);
+    if (santaChapterMatch) {
+      const [, chapterSlug] = santaChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="a-santa-do-pau-oco"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {

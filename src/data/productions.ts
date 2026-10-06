@@ -4,6 +4,7 @@ import { COLD_CASE_BRASIL_EPISODES } from './coldCaseData';
 import { EPISODES_451 } from './451Data';
 import { MEDUSA_A_MALDICAO_DE_ATENA_EPISODES } from './medusaData';
 import { PANDORUM_2_EPISODES } from './pandorum2Data';
+import { A_SANTA_DO_PAU_OCO_EPISODES } from './santaDoPauOcoData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -239,7 +240,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_fc095adec5a34548bd1545878589d704~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_fc095adec5a34548bd1545878589d704~mv2.png',
     synopsis: 'Baronesa é uma mulher muito rica, de dinheiro, mas pobre do amor dos três filhos: Cláudio, Ademir e Sandra. Ao perceber que os filhos só se importam com o dinheiro dela, Baronesa, antes de morrer, faz um enigma para que seus filhos encontrem onde ela deixou o documento com toda a sua herança. E isso dá início a uma grande confusão, porque Baronesa ainda em vida doa muitos dos seus bens para a Igreja Católica. E a casa onde mora, ela deixa para sua doméstica e governanta, Fátima.',
-    episodes: generateUnits(6, 'episódios')
+    episodes: A_SANTA_DO_PAU_OCO_EPISODES
   },
   {
     id: 'busca-de-bercos',
@@ -470,6 +471,9 @@ export function getProductionBySlug(slug: string): WebProduction | undefined {
   }
   if (slug === 'pandorum2') {
     return PRODUCTIONS_DATA.find((p) => p.slug === 'pandorum-2');
+  }
+  if (slug === 'santa-do-pau-oco') {
+    return PRODUCTIONS_DATA.find((p) => p.slug === 'a-santa-do-pau-oco');
   }
   return PRODUCTIONS_DATA.find((p) => p.slug === slug);
 }
