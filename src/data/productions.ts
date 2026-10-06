@@ -1,6 +1,8 @@
 import { WebProduction, UnitType, ChapterEpisode } from '../types';
 import { RASGA_MORTALHA_2_EPISODES } from './rasgaMortalha2Data';
 import { COLD_CASE_BRASIL_EPISODES } from './coldCaseData';
+import { EPISODES_451 } from './451Data';
+import { MEDUSA_A_MALDICAO_DE_ATENA_EPISODES } from './medusaData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -115,7 +117,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     highlightOrder: 4,
     coverImage: 'https://static.wixstatic.com/media/cbfc82_835265d7f6d24cef9e9458b0f71b6fd9~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_835265d7f6d24cef9e9458b0f71b6fd9~mv2.png',
     synopsis: 'Em um futuro próximo, a informação não é apenas controlada – ela é moldada em tempo real por algoritmos estatais. Livros físicos foram destruídos, e o governo mantém o monopólio da “verdade” por meio de uma rede de dados onipresente. Os “Apagadores” são agentes encarregados de eliminar qualquer registro considerado subversivo. Mas uma resistência silenciosa ainda guarda fragmentos de memória coletiva.',
-    episodes: generateUnits(8, 'episódios')
+    episodes: EPISODES_451
   },
   {
     id: 'socio-do-amor',
@@ -223,7 +225,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_eeb860d4f26d46438edd141a87f0b1e8~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_eeb860d4f26d46438edd141a87f0b1e8~mv2.png',
     synopsis: 'Medusa era uma jovem bela que, junto das irmãs Esteno e Euríale, servia como sacerdotisa de Atena. Filha de Fórcis e Ceto, era a única mortal da família e mantinha a castidade para seguir o sacerdócio. Após Atena vencer Poseidon na disputa pela cidade de Ática, Poseidon, furioso, violou Medusa no templo. Atena, irada, puniu Medusa, transformando-a num monstro com serpentes no lugar dos cabelos e olhar que petrificava. Expulsas, as irmãs se refugiaram em uma caverna até que Perseu, com ajuda dos deuses, decapitou Medusa. Do sangue dela surgiu Pégasus, fruto da relação entre Medusa e Poseidon.',
-    episodes: generateUnits(6, 'episódios')
+    episodes: MEDUSA_A_MALDICAO_DE_ATENA_EPISODES
   },
   {
     id: 'a-santa-do-pau-oco',
@@ -462,6 +464,9 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
 ];
 
 export function getProductionBySlug(slug: string): WebProduction | undefined {
+  if (slug === 'a-maldicao-de-atena') {
+    return PRODUCTIONS_DATA.find((p) => p.slug === 'medusa-a-maldicao-de-atena');
+  }
   return PRODUCTIONS_DATA.find((p) => p.slug === slug);
 }
 

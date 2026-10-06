@@ -110,6 +110,38 @@ function AppContent() {
       );
     }
 
+    // Direct shortcut for /451
+    if (pathOnly === '/451') {
+      return <ProductionDetailPage slug="451" onNavigate={navigate} />;
+    }
+    const match451Chapter = pathOnly.match(/^\/451\/([^/]+)$/);
+    if (match451Chapter) {
+      const [, chapterSlug] = match451Chapter;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="451"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
+    // Direct shortcuts for /medusa-a-maldicao-de-atena and /a-maldicao-de-atena
+    if (pathOnly === '/medusa-a-maldicao-de-atena' || pathOnly === '/a-maldicao-de-atena') {
+      return <ProductionDetailPage slug="medusa-a-maldicao-de-atena" onNavigate={navigate} />;
+    }
+    const medusaChapterMatch = pathOnly.match(/^\/(?:medusa-a-maldicao-de-atena|a-maldicao-de-atena)\/([^/]+)$/);
+    if (medusaChapterMatch) {
+      const [, chapterSlug] = medusaChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="medusa-a-maldicao-de-atena"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {
