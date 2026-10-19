@@ -4,6 +4,8 @@ import { HOMEM_EPISODE_03_PAGES } from './homemComHEpisodes/episode03';
 import { HOMEM_EPISODE_04_PAGES } from './homemComHEpisodes/episode04';
 import { HOMEM_EPISODE_05_PAGES } from './homemComHEpisodes/episode05';
 import { HOMEM_EPISODE_06_PAGES } from './homemComHEpisodes/episode06';
+import { HOMEM_EPISODE_07_PAGES } from './homemComHEpisodes/episode07';
+import { HOMEM_EPISODE_08_PAGES } from './homemComHEpisodes/episode08';
 import { ChapterEpisode } from '../types';
 
 export interface HomemEpisodeDef {
@@ -69,6 +71,24 @@ export const HOMEM_COM_H_EPISODES_RAW: HomemEpisodeDef[] = [
     summary:
       'Humberto percebe que o humor de suas colegas está especialmente volátil, mas não entende o porquê. Quando descobre que várias delas estão sincronizadas em seus ciclos menstruais, ele tenta ser extra cuidadoso com suas palavras e ações. Isso leva a uma série de gafes e mal-entendidos que resultam em situações cômicas, enquanto Humberto tenta navegar por esse "campo minado" emocional.',
     pages: HOMEM_EPISODE_06_PAGES,
+  },
+  {
+    number: 7,
+    label: 'Episódio 07',
+    slug: 'episodio-07',
+    title: 'Episódio 07 — O Tio Humberto',
+    summary:
+      'Quando uma das colegas traz seu bebê para o escritório, Humberto é "recrutado" para cuidar do bebê enquanto ela participa de uma reunião. Ele tenta seguir as instruções, mas acaba criando uma série de situações engraçadas enquanto tenta acalmar o bebê, mudá-lo e mantê-lo entretido, provando que ser "tio" pode ser mais desafiador do que ele imaginava.',
+    pages: HOMEM_EPISODE_07_PAGES,
+  },
+  {
+    number: 8,
+    label: 'Episódio 08',
+    slug: 'episodio-08',
+    title: 'Episódio 08 — O Organizador Desajeitado',
+    summary:
+      'Quando o escritório decide organizar uma festa temática, as mulheres pedem a Humberto que ajude na organização. Ele tenta impor um tema "masculino", mas é rapidamente superado pelas ideias das mulheres. No final, Humberto se vê no meio de uma festa cheia de glitter e glamour, tentando se adaptar enquanto todos se divertem às suas custas.',
+    pages: HOMEM_EPISODE_08_PAGES,
   },
 ];
 
