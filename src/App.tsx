@@ -190,6 +190,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcuts for /o-suplicio
+    if (pathOnly === '/o-suplicio') {
+      return <ProductionDetailPage slug="o-suplicio" onNavigate={navigate} />;
+    }
+    const suplicioChapterMatch = pathOnly.match(/^\/o-suplicio\/([^/]+)$/);
+    if (suplicioChapterMatch) {
+      const [, chapterSlug] = suplicioChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="o-suplicio"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {

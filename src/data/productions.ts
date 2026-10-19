@@ -6,6 +6,7 @@ import { MEDUSA_A_MALDICAO_DE_ATENA_EPISODES } from './medusaData';
 import { PANDORUM_2_EPISODES } from './pandorum2Data';
 import { A_SANTA_DO_PAU_OCO_EPISODES } from './santaDoPauOcoData';
 import { HOMEM_COM_H_EPISODES } from './homemComHData';
+import { SUPLICIO_EPISODES } from './suplicioData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -449,7 +450,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_5bd3799907fb4098bcde7a2e63509b90~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_5bd3799907fb4098bcde7a2e63509b90~mv2.png',
     synopsis: 'Situada em Loureiro Vitoriosa, uma cidadezinha rural e interiorana, o jovem Carlos de Lucca retorna anos após ser expulso e jurado de morte pelo assassinato de seu melhor amigo, mas ele logo irá descobrir os mistérios assombrosos que rodeiam o lugar e seus habitantes, enquanto lida com a fatal atração que sente por Juan Brasão, irmão adotivo de quem outrora fora seu melhor amigo e de quem cuja a morte ainda lhe é uma grande incógnita.',
-    episodes: generateUnits(6, 'episódios')
+    episodes: SUPLICIO_EPISODES
   },
   {
     id: 'um-novo-rei-1-temporada',
