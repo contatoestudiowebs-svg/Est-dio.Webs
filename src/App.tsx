@@ -174,6 +174,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcuts for /homem-com-h
+    if (pathOnly === '/homem-com-h') {
+      return <ProductionDetailPage slug="homem-com-h" onNavigate={navigate} />;
+    }
+    const homemChapterMatch = pathOnly.match(/^\/homem-com-h\/([^/]+)$/);
+    if (homemChapterMatch) {
+      const [, chapterSlug] = homemChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="homem-com-h"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {

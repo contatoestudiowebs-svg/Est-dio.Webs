@@ -5,6 +5,7 @@ import { EPISODES_451 } from './451Data';
 import { MEDUSA_A_MALDICAO_DE_ATENA_EPISODES } from './medusaData';
 import { PANDORUM_2_EPISODES } from './pandorum2Data';
 import { A_SANTA_DO_PAU_OCO_EPISODES } from './santaDoPauOcoData';
+import { HOMEM_COM_H_EPISODES } from './homemComHData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -262,11 +263,11 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     author: 'Fernando Ricoboni',
     category: 'Web série',
     unitType: 'episódios',
-    totalUnits: 8,
+    totalUnits: 6,
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_9a0bf519062c49cea2fe3bbf5615a4be~mv2.png/v1/fill/w_369,h_536,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cbfc82_9a0bf519062c49cea2fe3bbf5615a4be~mv2.png',
     synopsis: 'Em um escritório repleto de mulheres carismáticas, modernas e cheias de personalidade, Humberto é o único homem da equipe. Entre conversas sobre moda, maquiagem, relacionamentos e as mais diversas questões do universo feminino, ele descobre que sua opinião, mesmo cheia de trapalhadas e mal-entendidos, é mais valiosa do que imaginava. A cada episódio, Humberto tenta navegar por esse universo com bom humor e uma dose de ingenuidade, criando momentos cômicos e inesperados. Com histórias independentes e muito divertidas, Homem com H é uma série de comédia leve, cheia de situações hilárias, que aborda o dia a dia de um homem tentando encontrar seu lugar em um ambiente dominado pelo universo feminino.',
-    episodes: generateUnits(8, 'episódios')
+    episodes: HOMEM_COM_H_EPISODES
   },
   {
     id: 'rute',
