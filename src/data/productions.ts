@@ -7,6 +7,7 @@ import { PANDORUM_2_EPISODES } from './pandorum2Data';
 import { A_SANTA_DO_PAU_OCO_EPISODES } from './santaDoPauOcoData';
 import { HOMEM_COM_H_EPISODES } from './homemComHData';
 import { SUPLICIO_EPISODES } from './suplicioData';
+import { PANDORUM_EPISODES } from './pandorumData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -294,7 +295,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_210d33e510854ef79aac322b4003038e~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_210d33e510854ef79aac322b4003038e~mv2.png',
     synopsis: 'Em um mundo dominado pela tirania de SATIR, LYKA, a única sobrevivente de um massacre brutal, se une a rebeldes que lutam contra a opressão. MATIAS, seu pai, trama uma revolução arriscada, enquanto HOLLER caça sem piedade cada rebelde. PETER, um órfão, resgata LYKA e se junta à luta pela liberdade sob a liderança da enigmática general GALENA. Segredos obscuros e traições marcam essa batalha intensa pela sobrevivência e justiça!',
-    episodes: generateUnits(8, 'episódios')
+    episodes: PANDORUM_EPISODES
   },
   {
     id: 'no-te-pido-flores',
