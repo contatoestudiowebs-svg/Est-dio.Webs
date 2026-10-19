@@ -8,6 +8,7 @@ import { A_SANTA_DO_PAU_OCO_EPISODES } from './santaDoPauOcoData';
 import { HOMEM_COM_H_EPISODES } from './homemComHData';
 import { SUPLICIO_EPISODES } from './suplicioData';
 import { PANDORUM_EPISODES } from './pandorumData';
+import { PONTO_FRACO_EPISODES } from './pontoFracoData';
 
 function generateUnits(count: number, unitType: UnitType): ChapterEpisode[] {
   const prefix = unitType === 'capítulos' ? 'Capítulo' : 'Episódio';
@@ -425,7 +426,7 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     status: 'Finalizada',
     coverImage: 'https://static.wixstatic.com/media/cbfc82_191ef35d6bfb4a72b331172bf74a5e0d~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_191ef35d6bfb4a72b331172bf74a5e0d~mv2.png',
     synopsis: 'Frida é uma assassina profissional e conta com a ajuda de sua amiga Dorotéia para conseguir serviços e ter seus rastros apagados. Mas tudo muda quando Frida descobre que o Chefão está atrás dela. Frida se envolve com James e acaba tendo um filho. Dorotéia acredita que esse filho pode ser o Ponto Fraco de Frida. Frida tem o filho tirado dos seus braços e a história toma um rumo diferente, com segredos e revelações.',
-    episodes: generateUnits(6, 'episódios')
+    episodes: PONTO_FRACO_EPISODES
   },
   {
     id: 'sena',

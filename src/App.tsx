@@ -222,6 +222,22 @@ function AppContent() {
       );
     }
 
+    // Direct shortcuts for /ponto-fraco
+    if (pathOnly === '/ponto-fraco') {
+      return <ProductionDetailPage slug="ponto-fraco" onNavigate={navigate} />;
+    }
+    const pontoFracoChapterMatch = pathOnly.match(/^\/ponto-fraco\/([^/]+)$/);
+    if (pontoFracoChapterMatch) {
+      const [, chapterSlug] = pontoFracoChapterMatch;
+      return (
+        <ChapterEpisodeReaderPage
+          productionSlug="ponto-fraco"
+          chapterSlug={chapterSlug}
+          onNavigate={navigate}
+        />
+      );
+    }
+
     // 3. Production Detail: /webs/:slug
     const productionMatch = pathOnly.match(/^\/webs\/([^/]+)$/);
     if (productionMatch) {
