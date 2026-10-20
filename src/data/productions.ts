@@ -34,13 +34,13 @@ export const PRODUCTIONS_DATA: WebProduction[] = [
     author: 'Fred Reids',
     category: 'Web novela',
     unitType: 'capítulos',
-    totalUnits: 25,
+    totalUnits: 22,
     status: 'Estreia dia 11 de Janeiro',
     featured: true,
     highlightOrder: 1,
     coverImage: 'https://static.wixstatic.com/media/cbfc82_82f27329310c403c8e6c29e4d3285e23~mv2.png/v1/fill/w_362,h_536,al_c,q_85,enc_avif,quality_auto/cbfc82_82f27329310c403c8e6c29e4d3285e23~mv2.png',
     synopsis: 'Ísis e Janice eram muito amigas, mas essa amizade acabou depois que Ísis tomou Kleber de Janice. Eles eram namorados e tinham planos para casar e morar juntos, e Ísis se meteu no meio deles e acabou com a relação dos dois. Janice então virou essa página e acabou de apaixonando e casando com Daniel, irmão de Ísis. E desse casamento nasceu um filho. O que deixou Ísis com muita raiva porque desde que se casou com Kleber nunca conseguiu dar um filho a ele. Ao ver a família linda que Janice formou, Ísis passou a odiar a cunhada.',
-    episodes: generateUnits(25, 'capítulos')
+    episodes: generateUnits(22, 'capítulos')
   },
   {
     id: 'caminho-ao-poder',
